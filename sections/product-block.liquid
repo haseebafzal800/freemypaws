@@ -1,0 +1,3 @@
+{%- if product.title != 'Green Shipping Protection' and product.vender != 'seel' and product.title != 'Felicitails Buyer Protection' -%}
+  {%- render 'product-block', product: product, grid_class: 'one-third small-down--one-half' -%}
+{% endif %}

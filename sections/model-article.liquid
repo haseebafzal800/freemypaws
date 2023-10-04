@@ -1,0 +1,47 @@
+{% assign model =  article.metafields.custom.model_.value %} 
+
+<div class="model-wrapper modal" id="modal1">
+  <div class="modal-content">
+    <div class="model-head">
+      <span class="modal-close">{% render "svg-close" %}</span>
+      <h2>{% render "svg-checkbox" %} {{ model.model_heading }}</h2>
+    </div>  
+    <div class="model-content">
+      {{ model.model_content | metafield_tag }}
+    </div>  
+  </div>
+</div>
+
+
+
+<script>
+  const modalTriggerButton = document.querySelector(".btn-color");
+  const modal = document.querySelector(".modal");
+  const modalCloseButton = document.querySelector(".modal-close");
+  
+  modalTriggerButton.addEventListener("click", () => {
+    console.log("click")
+    modal.style.top = "0px"
+  })
+  modalCloseButton.addEventListener("click", () => {
+    modal.style.top = "-2000px"
+  })
+</script>
+
+{% schema %}
+  {
+    "name": "Model Article",
+    "settings": [],
+    "presets":[
+      {
+        "name": "Model Article"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

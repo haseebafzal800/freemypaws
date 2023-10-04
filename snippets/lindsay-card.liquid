@@ -1,0 +1,28 @@
+<div class="lindsay-card">
+  {% if card_img %}
+    <div class="profile">
+      <img src="{{ card_img | img_url: 'medium' }}" alt="lindsay profile image" />
+    </div>
+  {% endif %}
+  {% if card_headline %}
+    <strong class="card-headline">{{ card_headline }}</strong>
+  {% endif %}
+  {% if card_intro %}
+    <p class="card-intro">
+      {{ card_intro }}
+    </p>
+  {% endif %}
+  {% if card_signature %}
+    <div class="card-signature">
+      <img src="{{ card_signature | img_url: 'medium' }}" alt="lindsay signature image" />
+    </div>
+  {% endif %}
+  <div class="card-socialicons">
+    {% if card_follow %}
+      <strong class="card-headline">{{ card_follow }}</strong>
+    {% endif %}
+    {% if show_social_icons == true %}
+      {% render 'social-icons', icon_setting: settings.social_custom_icon_footer, icon_size: '20x' %}
+    {% endif %}
+  </div>
+</div>

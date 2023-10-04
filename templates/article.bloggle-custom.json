@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "banner": {
+      "type": "banner-ad",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bytetag-banner-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png",
+        "url": "https:\/\/bytetag.com\/discount\/felicitails"
+      }
+    },
+    "main": {
+      "type": "main-article-v2",
+      "settings": {
+        "show_article_module": false,
+        "show_breadcrumbs": true,
+        "show_author": true,
+        "show_editor": true,
+        "show_article_img": true,
+        "show_listen_audio": true,
+        "show_pagination": true,
+        "one_line_text": "",
+        "card_img": "shopify:\/\/shop_images\/lindsay-giguiere-founder-of-felicitails-profile-photo.png",
+        "card_headline": "Hello, I’m Lindsay!",
+        "card_intro": "A warm welcome from Lindsay & Huck (my English Pointer). Hope you enjoy the read and find just what you are looking for when it comes to living your best life with your loved pets.",
+        "card_signature": "shopify:\/\/shop_images\/lindsay-giguiere-signature-felicitails-a-modern-day-pet-animal-destination-founded-by-lindsay-giguiere.png",
+        "show_social_icons": true,
+        "card_follow": "Follow Us",
+        "search_heading": "Search articles",
+        "search_btn": "SEARCH",
+        "category_heading": "Categories",
+        "category_link": "blogs",
+        "tower_img_mob": "shopify:\/\/shop_images\/bytetag-banner-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png",
+        "show_tower_ad": true,
+        "tower_img": "shopify:\/\/shop_images\/bytetag-tower-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png",
+        "tower_url": "https:\/\/bytetag.com\/discount\/felicitails"
+      }
+    },
+    "1689184325ef55bf16": {
+      "type": "apps",
+      "blocks": {
+        "a22f106b-da31-45de-bdee-57e5fc094a85": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "a22f106b-da31-45de-bdee-57e5fc094a85"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main",
+    "1689184325ef55bf16"
+  ]
+}

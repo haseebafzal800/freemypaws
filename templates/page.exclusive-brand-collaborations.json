@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "7b2246de-34fe-4445-9981-7b84f52ea965": {
+      "type": "contact-form-custom",
+      "blocks": {
+        "5e7e24d9-5034-4842-99b5-ecd744138b72": {
+          "type": "fname_input",
+          "settings": {
+          }
+        },
+        "30824446-b8bd-4200-8c24-4544ea6c2f43": {
+          "type": "lname_input",
+          "settings": {
+          }
+        },
+        "bd992697-3b9f-41f4-93b9-015f7c3b4adf": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Firm With",
+            "type": "text",
+            "required": false
+          }
+        },
+        "98f83faa-2971-4b61-9ae9-abbd0535199a": {
+          "type": "phone_input",
+          "settings": {
+            "required": false
+          }
+        },
+        "0eb81a87-dee9-41a7-aa33-ca8ff7ed7ca7": {
+          "type": "email_input",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "5e7e24d9-5034-4842-99b5-ecd744138b72",
+        "30824446-b8bd-4200-8c24-4544ea6c2f43",
+        "bd992697-3b9f-41f4-93b9-015f7c3b4adf",
+        "98f83faa-2971-4b61-9ae9-abbd0535199a",
+        "0eb81a87-dee9-41a7-aa33-ca8ff7ed7ca7"
+      ],
+      "settings": {
+        "sec_title": "<h1>BRAND COLLABORATION INQUIRIES<\/h1>",
+        "show_title": true,
+        "title_alignment": "center",
+        "use_columns": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7b2246de-34fe-4445-9981-7b84f52ea965"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "cd8c5458-f419-4749-947d-08672c755e93": {
+      "type": "blog-slider",
+      "blocks": {
+        "28e3b6e2-9a6e-4b7a-8c7e-c4830d7142a4": {
+          "type": "article",
+          "settings": {
+            "article": "about-service-animals\/visiting-restaurants-with-your-psychiatric-service-animal-your-guide-to-federal-and-state-regulations",
+            "article_btn": "SERVICE ANIMALS",
+            "article_url": "shopify:\/\/blogs\/about-service-animals",
+            "show_featured_tail": true
+          }
+        },
+        "4afd531a-2e48-49b9-be43-7a3b0da7bfa8": {
+          "type": "article",
+          "settings": {
+            "article": "about-emotional-support-animals\/our-pick-of-the-top-10-dog-breeds-for-emotional-support-animals-esas",
+            "article_btn": "EMOTIONAL SUPPORT ANIMALS",
+            "article_url": "shopify:\/\/blogs\/about-emotional-support-animals",
+            "show_featured_tail": true
+          }
+        },
+        "44a743e1-baba-4e3a-b47b-40faec6a519b": {
+          "type": "article",
+          "settings": {
+            "article": "about-dog-grooming\/keeping-your-dog-cool-and-happy-easy-tips-for-hot-summer-days",
+            "article_btn": "DOG GROOMING",
+            "article_url": "shopify:\/\/blogs\/about-dog-grooming",
+            "show_featured_tail": true
+          }
+        },
+        "bcc65af1-6fad-447a-90c2-bdbda55160b5": {
+          "type": "article",
+          "settings": {
+            "article": "about-dog-nutrition\/ten-scary-truths-about-dog-food",
+            "article_btn": "DOG NUTRITION",
+            "article_url": "shopify:\/\/blogs\/about-dog-nutrition",
+            "show_featured_tail": true
+          }
+        },
+        "e06ba12e-6b1d-4ee4-b3a4-df533565551a": {
+          "type": "article",
+          "settings": {
+            "article": "about-dog-training\/crate-training-101",
+            "article_btn": "DOG TRAINING",
+            "article_url": "shopify:\/\/blogs\/about-dog-training",
+            "show_featured_tail": true
+          }
+        }
+      },
+      "block_order": [
+        "28e3b6e2-9a6e-4b7a-8c7e-c4830d7142a4",
+        "4afd531a-2e48-49b9-be43-7a3b0da7bfa8",
+        "44a743e1-baba-4e3a-b47b-40faec6a519b",
+        "bcc65af1-6fad-447a-90c2-bdbda55160b5",
+        "e06ba12e-6b1d-4ee4-b3a4-df533565551a"
+      ],
+      "settings": {
+      }
+    },
+    "de6b82d3-50e6-4ff2-80cd-ef47d6ef617c": {
+      "type": "banner-ad",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bytetag-banner-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png",
+        "url": "https:\/\/bytetag.com\/discount\/felicitails"
+      }
+    },
+    "d4704ed1-06e7-4545-8453-f2ece56be244": {
+      "type": "rich-text",
+      "settings": {
+        "title": "THE FELICITAILS BLOG",
+        "title_size": "H1",
+        "sub_title": "",
+        "text": "<h6><strong>A comprehensive guide to a rich life with dogs, packed with valuable insights, care tips, and fascinating information on every breed.<\/strong><\/h6>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#000000",
+        "color_text": "#000000",
+        "color_bg": "#ffffff",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "a8b506af-9004-4989-b913-6a3804767e86": {
+      "type": "home-blog-main",
+      "settings": {
+        "card_img": "shopify:\/\/shop_images\/lindsay-giguiere-founder-of-felicitails-profile-photo.png",
+        "card_headline": "Hello, I’m Lindsay!",
+        "card_intro": "A warm welcome from Lindsay & Huck (my English Pointer). Hope you enjoy the read and find just what you are looking for when it comes to living your best life with your loved pets.",
+        "card_signature": "shopify:\/\/shop_images\/lindsay-giguiere-signature-felicitails-a-modern-day-pet-animal-destination-founded-by-lindsay-giguiere.png",
+        "show_social_icons": true,
+        "card_follow": "Follow Us",
+        "search_heading": "Search articles",
+        "search_btn": "SEARCH",
+        "category_heading": "Categories",
+        "category_link": "blogs",
+        "tower_img_mob": "shopify:\/\/shop_images\/bytetag-banner-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png",
+        "show_tower_ad": true,
+        "tower_img": "shopify:\/\/shop_images\/bytetag-tower-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png",
+        "tower_url": "https:\/\/bytetag.com\/discount\/felicitails"
+      }
+    }
+  },
+  "order": [
+    "cd8c5458-f419-4749-947d-08672c755e93",
+    "de6b82d3-50e6-4ff2-80cd-ef47d6ef617c",
+    "d4704ed1-06e7-4545-8453-f2ece56be244",
+    "a8b506af-9004-4989-b913-6a3804767e86"
+  ]
+}

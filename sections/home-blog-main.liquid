@@ -1,0 +1,181 @@
+<div class="blog-main-wrapper container-wrapper customLoadMore poppins-font">
+  <div class="container">
+    <div class="mb-wrapper">
+      <div class="mb-left">
+        <div class="home-blog-articles">
+          {% for link in linklists.blogs.links %}
+            {% assign blog = link.object %}
+            {% for article in blog.articles %}
+              <div class="mb-hidden">
+                {% render 'article', article: article, link: link %}
+              </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
+        {% render 'load-more' %}
+      </div>
+      <div class="mb-right">
+        {% render 'lindsay-card', card_img: section.settings.card_img, card_headline: section.settings.card_headline, card_intro: section.settings.card_intro, card_signature: section.settings.card_signature, card_follow: section.settings.card_follow, show_social_icons: section.settings.show_social_icons %}
+        {% render 'search-articles', search_btn: section.settings.search_btn, search_heading: section.settings.search_heading %}
+        {% render 'categories-blogs', category_heading: section.settings.category_heading, category_link: section.settings.category_link %}
+        {% render 'tower-ad', tower_img_mob: section.settings.tower_img_mob, show_tower_ad: section.settings.show_tower_ad, tower_img: section.settings.tower_img, tower_url: section.settings.tower_url %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const articles = Array.from(document.querySelectorAll('.home-blog-articles > .mb-hidden'));
+  const articleCategories = {};
+
+  articles.forEach(article => {
+    const categoryTitle = article.querySelector('a.btn-primary').textContent.trim();
+    if (! articleCategories.hasOwnProperty(categoryTitle)) {
+      articleCategories[categoryTitle] = [];
+    }
+    articleCategories[categoryTitle].push(article);
+  });
+
+  const sortedArticles = [];
+  let finished = false;
+  while (! finished) {
+    finished = true;
+    for (const category in articleCategories) {
+      if (articleCategories.hasOwnProperty(category)) {
+        const articleCategory = articleCategories[category];
+        if (articleCategory.length > 0) {
+          sortedArticles.push(articleCategory.shift());
+          finished = false;
+        }
+      }
+    }
+  }
+
+  const mbWrapper = document.querySelector('.customLoadMore .home-blog-articles');
+  while (mbWrapper.firstChild) {
+    mbWrapper.removeChild(mbWrapper.firstChild);
+  }
+  sortedArticles.forEach(article => {
+    mbWrapper.appendChild(article);
+  });
+
+  let divChild = mbWrapper.getElementsByClassName('mb-hidden');
+  let visibleCount = 10;
+  let incrementCount = 10;
+
+  let loadMoreText = document.querySelector('.load-more__text');
+  let loadMoreBtn = document.querySelector('.load-more');
+
+  for (let i = visibleCount; i < divChild.length; i++) {
+    divChild[i].style.display = 'none';
+  }
+
+  function loadMoreBlogs() {
+    let hiddenCount = 0;
+    setTimeout(function() {
+      for (let i = visibleCount; i < divChild.length && hiddenCount < incrementCount; i++) {
+        divChild[i].style.display = 'block';
+        hiddenCount++;
+      }
+      visibleCount += hiddenCount;
+
+      if (visibleCount >= divChild.length) {
+        loadMoreText.innerText = "No More Articles";
+        loadMoreBtn.disabled = true;
+      }
+    }, 1000);
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "Home Blog Main",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Lindsay Card"
+      },
+      {
+        "type": "image_picker",
+        "id": "card_img",
+        "label": "Card Profile"
+      },
+      {
+        "type": "text",
+        "id": "card_headline",
+        "label": "Card Headline",
+        "default": "Hello, I’m Lindsay!"
+      },
+      {
+        "type": "textarea",
+        "id": "card_intro",
+        "label": "Card Intro",
+        "default": "A warm welcome from Lindsay & Huck (my English Pointer). Hope you enjoy the read and find just what you are looking for when it comes to living your best life with your loved pets."
+      }, {
+        "type": "image_picker",
+        "id": "card_signature",
+        "label": "Card Signature"
+      }, {
+        "type": "checkbox",
+        "id": "show_social_icons",
+        "label": "Show Social Icons",
+        "default": true
+      }, {
+        "type": "text",
+        "id": "card_follow",
+        "label": "Card Follow me",
+        "default": "Follow me:"
+      }, {
+        "type": "header",
+        "content": "Search Article"
+      }, {
+        "type": "text",
+        "id": "search_heading",
+        "label": "Search articles",
+        "default": "Search articles"
+      }, {
+        "type": "text",
+        "id": "search_btn",
+        "label": "Button Text",
+        "default": "SEARCH"
+      }, {
+        "type": "header",
+        "content": "Categories"
+      }, {
+        "type": "text",
+        "id": "category_heading",
+        "label": "Categories Heading",
+        "default": "Categories"
+      }, {
+        "type": "link_list",
+        "id": "category_link",
+        "label": "Blogs Menu"
+      }, {
+        "type": "header",
+        "content": "Tower Ad"
+      }, {
+        "type": "image_picker",
+        "id": "tower_img_mob",
+        "label": "Tower Image Mobile"
+      }, {
+        "type": "checkbox",
+        "id": "show_tower_ad",
+        "label": "Show Tower Ad",
+        "default": true
+      }, {
+        "type": "image_picker",
+        "id": "tower_img",
+        "label": "Tower Image Desktop"
+      }, {
+        "type": "url",
+        "id": "tower_url",
+        "label": "Tower Url"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Home Blog Main"
+      }
+    ]
+  }
+{% endschema %}

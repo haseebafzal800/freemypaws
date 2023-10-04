@@ -1,0 +1,519 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "1a49cf6b-d985-4a6f-90c3-f34682b1e96f": {
+      "type": "divider",
+      "settings": {
+        "height_size": 80,
+        "height_size_mobile": 40
+      }
+    },
+    "d8e56cfd-8a0b-49e6-9cd1-44db9407fc88": {
+      "type": "image-with-text",
+      "settings": {
+        "max_page_width": 1000,
+        "image_title_top": "SHIPPING STANDARDS",
+        "title_top_margin_bottom_d": 40,
+        "title_top_margin_bottom_m": 20,
+        "image_title_top_size": "H1",
+        "image": "shopify:\/\/shop_images\/shipping-stanards-of-felicitails-e-commerce-business-collage-felicitails-founded-by-lindsay-giguiere.png",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "right",
+        "paw_padding": false,
+        "subtitle": "",
+        "title": "At Felicitails, we offer many services and products to support you on your journey in pet ownership.",
+        "link_text": "",
+        "link_link_text": "",
+        "link_link_link": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "bold_sub_title": false,
+        "text_alignment": "center",
+        "subtitle_color": "",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "custom_class": "iwt-one",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    },
+    "a8ec60fc-b5de-46ae-b25f-c116a9cd6660": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {text-align: left;}",
+        "p {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Telehealth orders",
+        "title_size": "H3",
+        "sub_title": "",
+        "text": "<p>Therapist-Certification of your Emotional Support Animal or Service Animal orders, are fulfilled in a step-by-step process typically completed within 24-48 hours during regular business days. Any telehealth orders placed over the weekend or national holidays are fulfilled on the following standard business day of operations.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "a138a290-ba33-4f68-8c4d-ba44e3f0af30": {
+      "type": "timeline-custom",
+      "blocks": {
+        "394c8aa5-d50e-409c-83c3-fcff66b4fedd": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "Upon a successful order and payment confirmation, you will receive your order details via email, typically within 1-3 minutes. Please add support@freemypaws to your email provider's safe sender list or check your spam folder after 5 minutes post order if you have not received this.",
+            "button_title": "Step 1:",
+            "button_title_size": "H4"
+          }
+        },
+        "f93b6f21-4035-41ec-83b9-11d9c87207bb": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "Our system prepares your profile and, via email, sends out to the email we have on file for you a link to the Client Questionnaire for Therapist Confirmation for your completion. The online Client Questionnaire is a secure web-based form to complete and submit to us electronically. Again, this is sent out via our system, typically within 15 minutes of a successful order. Please add support@freemypaws to your email provider's safe sender list or check your spam folder 20 minutes post-order if you have not received this.",
+            "button_title": "Step 2:",
+            "button_title_size": "H4"
+          }
+        },
+        "5b73c627-f5fb-4aaa-9f91-ad074a3f9a10": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "After you have completed and submitted back electronically the online Client Questionnaire, the assigned Therapist will make contact with you to schedule a phone conversation. The typical time frame for this conversation is between 10-15 minutes. You should expect to hear from the Therapist assigned to your account within 48 hours but typically, within 24 hours is the norm. Orders placed over the weekend or on a national holiday will be attended to the following business day.",
+            "button_title": "Step 3:",
+            "button_title_size": "H4"
+          }
+        },
+        "e19fbba7-1924-441d-a97d-43e6e4ba74ec": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "Immediately after your telephonic conversation with the Therapist, your Client Questionnaire will either be confirmed or denied. If confirmed, your Therapist-Certified Letter and supporting documents will be emailed to you for your usage. If denied, you will be issued a refund for your purchase amount within 3-4 business days by our accounting department.If you have any questions about the process outlined above, don't hesitate to contact us using our online inquiry form or at support@freemypaws.com.",
+            "button_title": "Step 4:",
+            "button_title_size": "H4"
+          }
+        }
+      },
+      "block_order": [
+        "394c8aa5-d50e-409c-83c3-fcff66b4fedd",
+        "f93b6f21-4035-41ec-83b9-11d9c87207bb",
+        "5b73c627-f5fb-4aaa-9f91-ad074a3f9a10",
+        "e19fbba7-1924-441d-a97d-43e6e4ba74ec"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "2ca4179c-8ab8-4442-ac3e-bfe33c72d074": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {text-align: left;}",
+        "p {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Physical product orders",
+        "title_size": "H3",
+        "sub_title": "",
+        "text": "<p>These are processed within 1-3 business days (excluding weekends and holidays).<\/p><p>Successfully placed orders will receive an email confirmation with the order details. Please check your spam filter or contact us for confirmation if you do not receive an email.<br\/><br\/>You will also receive another notification when your order has shipped.<\/p><p>If you need assistance with your order, please get in touch with us immediately at support@felicitails.com. <\/p><p>Unfortunately, we will not be able to make changes to your order after it has shipped.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "5245b9d7-0ee7-4f47-81fb-259a3f73548b": {
+      "type": "multi-options",
+      "blocks": {
+        "39a3728c-e2dc-49e9-ae0c-47516d715168": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": true,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Free - 3 to 10 business days",
+            "title_size": "P",
+            "text": "<p>For Purchases Over $45<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "70ffd593-c6d8-451d-814c-e4718b19ddd9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": true,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Standard - 3 to 7 business days",
+            "title_size": "P",
+            "text": "<p>Starting at $5<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "6772b496-c49a-4073-95be-eacd7d790ebb": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": true,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Priority - 3 to 5 business days",
+            "title_size": "P",
+            "text": "<p>Starting at $20<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "ef4b5023-e8ef-421e-b698-188ee02a9b83": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": true,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Expedited - 1 to 3 business days",
+            "title_size": "P",
+            "text": "<p>Starting at $40<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "68f4d2c2-7d2b-4094-843e-f66edfa30c76": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": true,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Light Fury",
+            "title_size": "P",
+            "text": "<p>Starting at $20 (by weight)<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "39a3728c-e2dc-49e9-ae0c-47516d715168",
+        "70ffd593-c6d8-451d-814c-e4718b19ddd9",
+        "6772b496-c49a-4073-95be-eacd7d790ebb",
+        "ef4b5023-e8ef-421e-b698-188ee02a9b83",
+        "68f4d2c2-7d2b-4094-843e-f66edfa30c76"
+      ],
+      "custom_css": [
+        ".flex {margin: 0; gap: 30px;}",
+        ".grid-flex__item {box-shadow: 0 0 20px rgb(0 0 0 \/ 15%); border-radius: 10px; display: flex; padding: 30px; width: calc(50% - 15px);}",
+        ".container {margin-top: 0;}"
+      ],
+      "settings": {
+        "title": "USA Shipping Options and Costs",
+        "enlarge_title": false,
+        "text_alignment": "left",
+        "url_style": "button_1",
+        "enable_custom_colors": false,
+        "color_title": "",
+        "color_text": "",
+        "color_bg": "",
+        "gradient_bg": "",
+        "custom_class": "multi-column-sec",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    },
+    "8a8c2167-12eb-4dd9-a471-b3ebe6311301": {
+      "type": "rich-text",
+      "custom_css": [
+        "p {text-align: left;}",
+        ".bold-text {text-align: left;}"
+      ],
+      "settings": {
+        "title": "",
+        "title_size": "H2",
+        "sub_title": "Exact shipping rates will be calculated during the checkout process after inputting details of your shipping location and desired speed of delivery.",
+        "text": "<p>Please always review and ensure you have entered the correct address during checkout. We are not responsible for non-delivery due to errors in your address. If an order is returned due to an incorrect address, we will refund the original charge (excluding the shipping fee) and ask that you re-submit your order.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": true,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "34569902-6f1a-4c51-a1c8-d11cf23b4e26": {
+      "type": "multi-options",
+      "blocks": {
+        "template--19858027315501__34569902-6f1a-4c51-a1c8-d11cf23b4e26-168875855904d3b62a-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Quick Tip on Shipping Times:",
+            "title_size": "P",
+            "text": "<p>Shipping to cities is always faster than shipping to rural areas.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "template--19858027315501__34569902-6f1a-4c51-a1c8-d11cf23b4e26-168875855904d3b62a-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Add a title or tagline",
+            "title_size": "P",
+            "text": "<p>We do not offer local in-store pick-up.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19858027315501__34569902-6f1a-4c51-a1c8-d11cf23b4e26-168875855904d3b62a-0",
+        "template--19858027315501__34569902-6f1a-4c51-a1c8-d11cf23b4e26-168875855904d3b62a-1"
+      ],
+      "custom_css": [
+        ".flex {margin: 0; gap: 30px;}",
+        ".grid-flex__item {box-shadow: 0 0 20px rgb(0 0 0 \/ 15%); text-align: left; border-radius: 10px; display: flex; padding: 30px; width: calc(50% - 15px);}",
+        ".container {margin-top: 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "enlarge_title": false,
+        "text_alignment": "center",
+        "url_style": "button_1",
+        "enable_custom_colors": false,
+        "color_title": "",
+        "color_text": "",
+        "color_bg": "",
+        "gradient_bg": "",
+        "custom_class": "mo-two",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    },
+    "c817d378-00dc-45b1-b5fb-69e008e8c77b": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3,p {text-align: left;}"
+      ],
+      "settings": {
+        "title": "International Shipping",
+        "title_size": "H3",
+        "sub_title": "",
+        "text": "<p>We do offer international shipping.<br\/><br\/>During checkout, you will be notified if the product you want to buy can be shipped to your country, and shipping rates will be provided then. International shipping rates are calculated by combining the order's weight with the requested delivery speed.<br\/><br\/>Your order may be subject to import duties and taxes (including VAT) incurred once a shipment reaches your destination country. Greenfield Groves Inc., dba Free My Paws, is not responsible for these charges if they are applied. As the customer, you are fully responsible.<br\/><br\/>Please note that we are not responsible for shipping carrier delays, which are beyond our control.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "0fa8acb1-9271-4eeb-a13e-e284ee0e8f15": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3,p {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Checking Status of Your Order",
+        "title_size": "H3",
+        "sub_title": "",
+        "text": "<p>When your order has shipped, you will receive an email notification from us, including a tracking number you can use to check its status. Please allow 48 hours for the tracking information to become available.<br\/><br\/>If you haven't received your order within seven days of receiving your shipping confirmation email, please contact us at support@freemypaws.com with your name and order number. We will look into it for you and reply straight away.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "5d3c89aa-87af-4903-a61b-c1d922505a49": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3,p {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Refunds, Returns, and Exchanges",
+        "title_size": "H3",
+        "sub_title": "",
+        "text": "<p>We accept returns up to 60 days after delivery, providing the item is unused and in its original condition. We will refund the entire order amount minus the shipping costs for the return.<br\/><br\/>If your order arrives damaged in any way, please email us as soon as possible at support@freemypaws.com with your order number and a photo of the item's condition. We address these case-by-case but will work towards a satisfactory solution.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "2e3663fa-b25f-4abd-8a51-c52ab3f9213a": {
+      "type": "image-with-text",
+      "custom_css": [
+        "a {text-decoration: none; color: #388e3c;}"
+      ],
+      "settings": {
+        "max_page_width": 1000,
+        "image_title_top": "",
+        "title_top_margin_bottom_d": 40,
+        "title_top_margin_bottom_m": 20,
+        "image_title_top_size": "H1",
+        "image": "shopify:\/\/shop_images\/shipping-stanards-of-felicitails-e-commerce-business-white-emotional-support-with-young-woman-opening-packing-of-dog-clothing-and-accessories-felicitails-founded-by-lindsay-giguiere.png",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "right",
+        "paw_padding": true,
+        "subtitle": "",
+        "title": "If you have any further questions, please don't hesitate to contact us at",
+        "link_text": "",
+        "link_link_text": "<h3>support@freemypaws.com<\/h3>",
+        "link_link_link": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "bold_sub_title": false,
+        "text_alignment": "center",
+        "subtitle_color": "",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "custom_class": "",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1a49cf6b-d985-4a6f-90c3-f34682b1e96f",
+    "d8e56cfd-8a0b-49e6-9cd1-44db9407fc88",
+    "a8ec60fc-b5de-46ae-b25f-c116a9cd6660",
+    "a138a290-ba33-4f68-8c4d-ba44e3f0af30",
+    "2ca4179c-8ab8-4442-ac3e-bfe33c72d074",
+    "5245b9d7-0ee7-4f47-81fb-259a3f73548b",
+    "8a8c2167-12eb-4dd9-a471-b3ebe6311301",
+    "34569902-6f1a-4c51-a1c8-d11cf23b4e26",
+    "c817d378-00dc-45b1-b5fb-69e008e8c77b",
+    "0fa8acb1-9271-4eeb-a13e-e284ee0e8f15",
+    "5d3c89aa-87af-4903-a61b-c1d922505a49",
+    "2e3663fa-b25f-4abd-8a51-c52ab3f9213a"
+  ]
+}

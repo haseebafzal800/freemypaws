@@ -1,0 +1,56 @@
+<div class="psa-inner-text">
+  <div class="psa-inner-container">
+{% for block in section.blocks %}
+{% if block.settings.heading %}
+  <h2>
+    {{ block.settings.heading }}
+  </h2>
+{% endif %}
+{% if block.settings.content %}
+  <p>{{ block.settings.content }}</p>
+{% endif %}
+{% endfor %}
+  </div>
+</div>
+{% schema %}
+ {
+  "name": "Content",
+   "class":"airline-custom",
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Heading",
+          "id": "heading"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "richtext",
+          "label": "Content",
+          "id": "content"
+        }
+      ]
+    }
+  ],
+   "presets": [
+     {
+       "name":"Rich Text Content"
+     }
+   ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

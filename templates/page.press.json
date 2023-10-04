@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "38ba8fb6-3a11-47c2-956d-8c3f01a894c3": {
+      "type": "contact-form-custom",
+      "blocks": {
+        "97fcd235-f6ec-43f0-93cd-8b3870bc1900": {
+          "type": "fname_input",
+          "settings": {
+          }
+        },
+        "0719d76a-a0b8-4a9b-a3ee-b33ee06a8da9": {
+          "type": "lname_input",
+          "settings": {
+          }
+        },
+        "1ba8840c-f760-41e2-bc0b-a0d40c2bcc41": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Firm Width",
+            "type": "text",
+            "required": false
+          }
+        },
+        "2799f66e-1372-4314-b2fe-e66586ebb3e5": {
+          "type": "phone_input",
+          "settings": {
+            "required": false
+          }
+        },
+        "11de2484-dce2-4809-ae05-150594e8fdaa": {
+          "type": "email_input",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "97fcd235-f6ec-43f0-93cd-8b3870bc1900",
+        "0719d76a-a0b8-4a9b-a3ee-b33ee06a8da9",
+        "1ba8840c-f760-41e2-bc0b-a0d40c2bcc41",
+        "2799f66e-1372-4314-b2fe-e66586ebb3e5",
+        "11de2484-dce2-4809-ae05-150594e8fdaa"
+      ],
+      "settings": {
+        "sec_title": "<h1>PRESS & MEDIA INQUIRES<\/h1><p>We are always delighted to explore the prospect of a fruitful partnership with brands and companies that share our ethos and commitment to delivering valuable products and services to our community. <\/p><p><br\/><\/p><p>We seek professionalism and are committed to crafting successful alliances that bring mutual benefits as well as joy to our customers.<\/p><p><br\/><\/p><p>If your brand shares our passion for all pets, and in particular dogs, including emotional support and service animals, we invite you to fill in the form below to express your interest in a brand collaboration. We'll be back to you soon!<\/p>",
+        "show_title": true,
+        "title_alignment": "center",
+        "use_columns": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "38ba8fb6-3a11-47c2-956d-8c3f01a894c3"
+  ]
+}

@@ -1,0 +1,160 @@
+{% render 'slickCdn' %}
+
+{{ 'blogs.css' | asset_url | stylesheet_tag: preload: true }}
+<div class="blog-featured poppins-font">
+  {% style %}
+   
+    .bf-article {
+      overflow: initial;
+      margin-bottom: 98px;
+      aspect-ratio: 1.47;
+      min-height: 0px !important;
+      max-height: 628px;
+    }
+    .bf-article:after {
+      border-radius: 20px;
+    }
+    .art-content {
+      z-index: 1;
+      padding: 0px !important;
+      margin: 0px auto;
+      margin-bottom: -98px;
+      width: 470px;
+    }
+    .article_title p {
+      color: #636363;
+      margin: 0px;
+      text-align: center;
+      font-weight: 400 !important;
+      line-height: 22.5px !important;
+    }
+    @media screen and (max-width: 767px) {
+      .train_learn_more {
+        width: 100%;
+      }
+
+      .bf-article {
+        overflow: initial;
+        margin-bottom: 118px;
+        max-height: 648px;
+      }
+
+      .art-content {
+        margin-bottom: -118px;
+      }
+    }
+
+     @media screen and (max-width: 992px) {
+        .blog-featured{
+          padding: 0 20px;
+        }
+     }
+  {% endstyle %}
+  <div class="container-fluid">
+    <h2 class="heading" style="display: block;text-align: center;margin-bottom: 40px;">
+      {% if section.settings.heading != blank %}
+        {{ section.settings.heading }}
+      {% else %}
+        {{ blog.title }}
+      {% endif %}
+    </h2>
+    <div class="bf-wrapper">
+      {% for block in section.blocks %}
+        {% comment %} {% assign article = block.settings.article %} {% endcomment %}
+        {% assign image = block.settings.image %}
+        <div class="bf-article">
+          <div
+            style="background-image: url({{ image | image_url }});width: 100%;height: 100%;position: absolute;background-size: cover;border-radius: 20px;"
+          ></div>
+          <div class="art-content">
+            <a class="article_title" href="">
+              <p class="heading-style">{{ block.settings.title }}</p>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div style="text-align: center;margin-top: 20px;">
+      <a
+        class="btn btn--small btn--primary train_learn_more"
+        title=""
+        href="{{ section.settings.button_link }}"
+        >Learn More</a
+      >
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('.bf-wrapper').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      mobileFirst: true,
+      nextArrow: `<button class="slider-arrow nextArrow btn--plain prev icon feather-icon">{% render 'feather-arrow-right' %}</button>`,
+      prevArrow: `<button class="slider-arrow prevArrow btn--plain next icon feather-icon">{% render 'feather-arrow-left' %}</button>`,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            centerMode: true,
+            centerPadding: '150px',
+          },
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            centerMode: true,
+            centerPadding: '200px',
+          },
+        },
+      ],
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Training Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Images",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "2048 x 1024px recommended"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "<b>Modern dog<\/b> training to establish for clear communication between you and your dog"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Training Slider"
+    }
+  ]
+}
+{% endschema %}

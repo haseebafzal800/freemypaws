@@ -1,0 +1,18 @@
+<div class="categories-section">
+  {% if category_heading %}
+    <strong class="card-headline">{{ category_heading }}</strong>
+  {% endif %}
+  <ul>
+    {% for link in linklists[category_link].links %}
+      {% assign blog = link.object %}
+      {% if blog.articles.size > 0 %}
+        <li>
+          <a class="cate-title" href="{{ link.url }}">{{ link.title }}</a>
+          <div class="cate-count">
+            ({{ blog.articles.size }})
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

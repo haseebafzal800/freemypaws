@@ -1,0 +1,115 @@
+<div class="airline-categories generic-heading">
+  <div class="container">
+    <h2 class="main-heading">{{ section.settings.main_heading }}</h2>
+    <div class="column-holder">
+      {% for block in section.blocks %}
+      <div class="box" href="{{ block.settings.link }}">
+        <a href="{{ block.settings.link }}" class="img-holder">
+          <img src="{{ block.settings.image | img_url: 'large' }}">
+        </a>
+        <h2>{{ block.settings.heading }}</h2>
+        <p>{{ block.settings.description }}</p>
+                <a class="read-more" href="{{ block.settings.link }}">{{ block.settings.link_title }}</a>
+      </div>
+      {% endfor %}
+     
+      <div class="box last-box-img" href="{{ section.settings.promotional_link }}">
+        <div class="img-holder">
+           <img src="{{ section.settings.promotional_image | img_url: 'large' }}">
+        </div>
+        <div class="caption">
+         <strong>{{ section.settings.promotion_heading }}</strong>
+         <p>{{ section.settings.promotional_details }}</p>
+         <a class="btn btn-primary" href="{{ section.settings.promotional_link }}">{{ section.settings.promo_link_title }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "AirLine Pages",
+    "settings": [
+        {
+      "type": "textarea",
+      "label": "Main Heading",
+      "id": "main_heading"
+    },
+      {
+          "type": "text",
+          "label": "Promotional Heading",
+           "id": "promotion_heading"
+          },
+          {
+         "type": "textarea",
+          "id": "promotional_details",
+          "label": "Promotional Details"
+          },
+      {
+           "type": "image_picker",
+           "id": "promotional_image",
+           "label": "Promotional Image"
+         },
+         {
+           "type": "url",
+           "id": "promotional_link",
+           "label": "Promotion Url"
+         },
+         {
+           "type": "text",
+           "id": "promo_link_title",
+           "label": "Promotional Link Title",
+           "default": "Read More"
+         }
+      
+    ],
+     "max_blocks": 15,
+     "blocks": [
+     {
+       "name": "Pages Details",
+       "type": "pagesdetails",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+          {
+          "type": "text",
+          "label": "Page Title",
+           "id": "heading"
+          },
+          {
+         "type": "textarea",
+          "id": "description",
+          "label": "Page Description"
+        
+          },
+         {
+           "type": "url",
+           "id": "link",
+           "label": "Page Url"
+         },
+         {
+           "type": "text",
+           "id": "link_title",
+           "label": "Link Titlle",
+           "default": "Read More"
+         }
+       ]
+     }
+  ],
+  "presets": [
+      {
+        "name": "AirLine Page Grid"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

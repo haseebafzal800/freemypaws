@@ -1,0 +1,10 @@
+{% if show_tower_ad %}
+  <div class="tower-ad">
+    <a href="{{ tower_url }}" class="ad-banner desktopView">
+      <img src="{{ tower_img | img_url: '1024x'}}" alt="ad-banner">
+    </a>
+    <a href="{{ tower_url }}" class="ad-banner mobileView">
+      <img src="{{ tower_img_mob | img_url: '1024x'}}" alt="ad-banner">
+    </a>
+  </div>
+{% endif %}

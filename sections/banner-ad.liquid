@@ -1,0 +1,23 @@
+{% render "banner-ad", image: section.settings.image, url: section.settings.url %}
+
+{% schema %}
+  {
+    "name": "Ad Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Ad Banner"
+      }, {
+        "type": "url",
+        "id": "url",
+        "label": "URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Ad Banner"
+      }
+    ]
+  }
+{% endschema %}

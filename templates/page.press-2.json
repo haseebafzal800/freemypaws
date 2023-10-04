@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "31301e1a-862f-413b-8679-494d4943be00": {
+      "type": "image-with-text",
+      "settings": {
+        "max_page_width": 1000,
+        "image_title_top": "",
+        "title_top_margin_bottom_d": 80,
+        "title_top_margin_bottom_m": 20,
+        "image_title_top_size": "H1",
+        "image": "shopify:\/\/shop_images\/emotional-support-french-bulldog-speaking-to-the-press-and-news-reporters-on-felicitails-founded-by-lindsay-giguiere_92016c4f-c864-483f-a50e-cb5ca16f39e5.png",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "right",
+        "paw_padding": false,
+        "subtitle": "",
+        "title": "Thanks for stopping in. We’ll get back to you shortly.",
+        "link_text": "",
+        "link_link_text": "",
+        "link_link_link": "",
+        "text": "",
+        "button_label": "RETURN TO OUR HOME PAGE",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "bold_sub_title": false,
+        "text_alignment": "center",
+        "subtitle_color": "",
+        "color_text": "#333333",
+        "color_bg": "#ffffff",
+        "gradient_bg": "",
+        "custom_class": "",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "31301e1a-862f-413b-8679-494d4943be00"
+  ]
+}

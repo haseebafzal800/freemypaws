@@ -1,0 +1,95 @@
+<div class="psa-inner-text">
+  <div class="psa-inner-container"><div class="psa-about-cont">
+      <div class="img-holder">
+        <img src="{{ section.settings.image | img_url:'master' }}" alt="image"> 
+      </div>
+      <div class="psa-desc">
+        <h2>{{ section.settings.banner_heading }}</h2>
+        <p>{{ section.settings.content }}</p>
+        {% for block in section.blocks %}
+          {% if block.settings.image_c and block.settings.banner_heading_c  %}
+        <div class="psa-custom-card">
+          <div class="img-box">
+           <img src="{{ block.settings.image_c | img_url:'master' }}" alt="image"> 
+          </div>
+          <div class="txt-holder">
+            <h2>{{ block.settings.banner_heading_c }}</h2>
+            {% if block.settings.details  %}<p>{{ block.settings.details }}</p>{% endif %}
+            <a class="btn btn-primary" href="{{ block.settings.btn_url }}">{{ block.settings.btn_name }}</a>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div></div>
+
+
+{% schema %}
+    {
+  "name": "Air-Airline Image + Cards",
+      "class":"airline-custom",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "banner_heading"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content"
+    }
+  ],
+      "blocks": [
+    {
+      "type": "Card",
+      "name": "Image and Content",
+      "settings": [
+        {
+        "type": "image_picker",
+        "id": "image_c",
+        "label": "Image"
+      },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "banner_heading_c"
+    },
+        {
+      "type": "text",
+      "label": "Details",
+      "id": "details"
+    },
+    {
+      "type": "text",
+      "label": "Button Name",
+      "id": "btn_name"
+    },
+    {
+      "type": "url",
+      "label": "Button URL",
+      "id": "btn_url"
+    }
+      ]
+    }
+  ],
+  "presets": [
+      {
+        "name": "Air-Airline Image + Cards"
+      }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

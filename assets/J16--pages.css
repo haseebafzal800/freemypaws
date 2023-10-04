@@ -1,0 +1,171 @@
+/* =====================  Come Join Us - Start  ===================== */
+.template-page #MainContent p {
+    margin: 0;
+}
+.template-page #MainContent .input-wrapper {
+    border: 0;
+    margin: 20px 0;
+}
+.template-page #MainContent .J16--Radio {
+    margin-top: 10px;
+}
+.template-page #MainContent .input-wrapper label {
+    position: static;
+    color: var(--dark-text, #636363);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.template-page #MainContent .input-wrapper label span {
+    color: #F35C5C;
+}
+.template-page #MainContent .input-wrapper input,
+.template-page #MainContent .input-wrapper textarea,
+.template-page #MainContent .input-wrapper select {
+    border-radius: 6px;
+    border: 1px solid var(--dark-lines, #EAEAEA);
+    background: var(--dark-white, #FFF);
+    padding: 12px 15px;
+}
+.template-page #MainContent .J16--Radio label {
+    pointer-events: unset;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: #000;
+}
+.template-page #MainContent input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+.template-page #MainContent input[type="radio"]:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -1px;
+    left: -2px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #EAEAEA;
+}
+.template-page #MainContent input[type="radio"]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -1px;
+    left: -2px;
+    position: relative;
+    background-color: #E7C3C3;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #EAEAEA;
+    outline: 2px solid #fff;
+    outline-offset: -4px;
+}
+.template-page #MainContent .J16--Decline2answer .J16--Content {
+    border-radius: 10px;
+    background: var(--secondary-blue, #D0E1F1);
+    padding: 20px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+    color: #636363;
+}
+.template-page #MainContent .J16--Decline2answer .J16--Content p:first-child strong {
+    margin-bottom: 15px;
+    display: block;
+    color: #000;
+}
+.template-page #MainContent .rte.J16--Radio label {
+    margin: 20px 0;
+}
+.template-page #MainContent .input-wrapper input#ContactFormPhone {
+    padding-left: 45px;
+}
+.template-page #MainContent .input-wrapper .iti.iti--allow-dropdown {
+    width: 100%;
+}
+.template-page .text-column__link {
+    background-color: #388E3C;
+}
+.template-page .overlay-standard {
+    margin-top: 0 !important;
+    margin-left: 30px !important;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    max-width: 284px;
+    text-align: left;
+    padding: 40px;
+}
+.template-page .overlay-standard .overlay__bg {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.template-page .overlay-standard div.overlay__content div.overlay-text {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.template-page.template-suffix-press-2 .image-with-text .image-with-text__content {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.template-page #MainContent .image-with-text__link {
+    padding: 12px 32px;
+    background-color: #388E3C;
+    font-weight: 400;
+}
+.template-page .timeline-box-wrapper .button-div a {
+    background-color: #D0E1F1;
+}
+.template-page .sec-timeline .timeline-wrap:after {
+    background: #D0E1F1;
+}
+@media screen and (max-width: 768px) {
+    .template-page .contact-page__container div.page-width {
+        background: #F9F9F9;
+        max-width: 100%;
+        border-radius: 20px;
+        padding: 40px 25px !important;
+    }
+    .template-page .contact-page__container div.page-width .grid__item {
+        padding-left: 0;
+    }
+    .template-page #MainContent input[type="radio"]:checked:after {
+        top: -2px;
+        left: -1px;
+    }
+    .template-page .overlay-standard {
+        width: 218px;
+        padding: 20px;
+        margin-left: 40px !important;
+    }
+    .template-page .overlay-standard div.overlay__content div.overlay-text {
+        font-size: 15px;
+        line-height: 22.5px;
+    }
+    .template-page .rich-text-section .rte {
+        margin: 15px 0 0;
+    }
+}
+/* =====================  Come Join Us - End  ===================== */

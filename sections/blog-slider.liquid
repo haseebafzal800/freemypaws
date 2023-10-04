@@ -1,0 +1,96 @@
+{% render 'slickCdn' %}
+
+
+<div class="blog-featured container-wrapper poppins-font">
+  <div class="container-fluid">
+    <div class="bf-wrapper">
+
+      {% for block in section.blocks %}
+        {% liquid
+          assign article = block.settings.article
+        %}
+        <div class="bf-article" style="background-image: url({{ article.image | image_url }});">
+          {% if block.settings.show_featured_tail %}
+            <div class="featured-tail">Featured Tail</div>
+          {% endif %}
+          <div class="art-content">
+            <a href="{{ block.settings.article_url }}" class="btn btn-primary">{{ block.settings.article_btn }}</a>
+            <a class="article_title" href="{{ article.url }}">
+              <h2 class="heading-style">{{ article.title }}</h2>
+            </a>
+            {% if article.excerpt %}
+              <p>{{ article.excerpt }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('.bf-wrapper').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      mobileFirst: true,
+      nextArrow: `<button class="slider-arrow nextArrow btn--plain prev icon feather-icon">{% render 'feather-arrow-right' %}</button>`,
+      prevArrow: `<button class="slider-arrow prevArrow btn--plain next icon feather-icon">{% render 'feather-arrow-left' %}</button>`,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            centerMode: true,
+            centerPadding: '150px'
+          }
+        }, {
+          breakpoint: 1200,
+          settings: {
+            centerMode: true,
+            centerPadding: '200px'
+          }
+        }
+      ]
+    });
+  })
+</script>
+
+{% schema %}
+  {
+    "name": "Blog Slider",
+    "blocks": [
+      {
+        "type": "article",
+        "name": "Article",
+        "settings": [
+          {
+            "type": "article",
+            "id": "article",
+            "label": "Article"
+          }, {
+            "type": "text",
+            "id": "article_btn",
+            "label": "CTA",
+            "default": "Category"
+          }, {
+            "type": "url",
+            "id": "article_url",
+            "label": "CTA Link"
+          }, {
+            "type": "checkbox",
+            "id": "show_featured_tail",
+            "label": "Show Featured Tail",
+            "default": true
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Blog Slider"
+      }
+    ]
+  }
+{% endschema %}

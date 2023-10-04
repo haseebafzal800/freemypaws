@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "8fcc5a5c-e3d5-48de-a4d3-7c638e8421fa": {
+      "type": "divider",
+      "settings": {
+        "height_size": 80,
+        "height_size_mobile": 40
+      }
+    },
+    "4130e480-b74e-497c-9cfd-b529b0a4b297": {
+      "type": "image-with-text",
+      "settings": {
+        "max_page_width": 1030,
+        "image_title_top": "YOUR RIGHTS UNDER THE CALIFORNIA CONSUMER PRIVACY ACT",
+        "title_top_margin_bottom_d": 60,
+        "title_top_margin_bottom_m": 40,
+        "image_title_top_size": "H1",
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-california-consumer-privacy-act-requirements-service-animals-emotional-suppport-animals-dogs-cats-french-bulldog-wrapped-in-blanket-felicitails-founded-by-lin.png",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "right",
+        "paw_padding": true,
+        "subtitle": "",
+        "title": "",
+        "link_text": "",
+        "link_link_text": "",
+        "link_link_link": "",
+        "text": "<p>The California Consumer Privacy Act (CCPA) provides you with rights regarding how your data or personal information is treated. Under the legislation, California residents can choose to opt out of the “sale” of their personal information to third parties. Based on the CCPA definition, “sale” refers to data collection for the purpose of creating advertising and other communications. <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">Learn more about CCPA and your privacy rights.<\/a><br\/><br\/><strong>HOW TO OPT OUT<\/strong><br\/><br\/>By clicking on the link below, we will no longer collect or sell your personal information. This applies to both third-parties and the data we collect to help personalize your experience on our website or through other communications. For more information, view our privacy policy.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "bold_sub_title": false,
+        "text_alignment": "center",
+        "subtitle_color": "",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "custom_class": "",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8fcc5a5c-e3d5-48de-a4d3-7c638e8421fa",
+    "4130e480-b74e-497c-9cfd-b529b0a4b297"
+  ]
+}

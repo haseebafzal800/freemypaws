@@ -1,0 +1,286 @@
+<style>
+               .email-access-sec .style-tooltip{
+       background-color: #ECBEBE;
+       color: #FF3D3D;
+       text-align: center;
+       border-radius: 6px;
+       padding: 12px 13px 12px 8px;
+       position: absolute;
+       z-index: 1;
+       bottom: calc(100% + 5px);
+       right: 0;
+       font-size: 13px;
+       border: 1px solid #FF3D3D;
+  }
+   .email-access-sec .style-tooltip::after {
+       content: "";
+       position: absolute;
+       top: calc(100% - 5px);
+       right: 17px;
+       transform: translateY(0px) rotate(135deg);
+       border-width: 1px;
+       border-style: solid;
+       border-color: #FF3D3D #FF3D3D transparent transparent;
+       width: 12px;
+       height: 12px;
+       z-index: 9999;
+       background: #ECBEBE;
+  }
+   .form-group , .field{
+       position:relative;
+  }
+   .email-access-sec .style-tooltip.mob-arrow::after {
+       top: 50%;
+       right: calc(100% - 6px);
+       transform: translateY(-50%) rotate(225deg);
+  }
+   .email-access-sec .mob-arrow-p{
+       display: flex;
+       justify-content: center;
+       gap:15px;
+       align-items: center;
+       margin-bottom: 10px;
+  }
+  .email-access-sec .mob-arrow-p .style-tooltip{
+       position: relative;
+       font-size: 12px;
+  }
+   .bot-arrow {
+       position: absolute;
+       top: 14px;
+       height:auto !important;
+       right: 15px;
+  }
+   @media (min-width:1199.98px){
+       .email-access-sec .mob-arrow-p .style-tooltip{
+           font-size:13px;
+      }
+       .email-access-sec .mob-arrow-p{
+           position: absolute;
+           left: 76%;
+           width: 100%;
+           bottom: 30%;
+           flex-direction: column-reverse;
+      }
+       .email-access-sec .style-tooltip.mob-arrow::after{
+           top: calc(100% - 5px);
+           right: 50%;
+           transform: translateY(0px) rotate(135deg);
+      }
+       .d-arrow-lg{
+           margin-right: 10px;
+      }
+  }
+  .red-color{
+    outline:1px solid #FF3D3D;
+  }
+   .red-color::placeholder{
+    color:#FF3D3D;
+     opacity:1;
+   }
+</style>
+<script>
+  $(document).ready(function() {
+     $(".submit_mhb").click(function(e){
+       var C_Email = $("#ContactFormEmail").val();
+       var First_Name = $("#ContactFormFirstName").val();
+
+       if (C_Email == "" && First_Name == "") {
+         e.preventDefault();
+         $(".both-tooltips").show();
+         $("#ContactFormEmail , #ContactFormFirstName").addClass("red-color");
+         $(".custom-tootip.name").hide();
+           $(".custom-tootip.email").hide();
+           $(".custom-tootip.email2").hide();
+         return;
+       }
+         if (!isValidEmail(C_Email) && First_Name == "") {
+            e.preventDefault();
+           $("#ContactFormFirstName").addClass("red-color");
+           $("#ContactFormEmail").removeClass("red-color");
+           $(".custom-tootip.name").show();
+           $(".both-tooltips").hide();
+           $(".custom-tootip.email").hide();
+           $(".custom-tootip.email2").hide();
+           return;
+         }
+       if (!First_Name == "" && C_Email == ""){
+          e.preventDefault();
+         $("#ContactFormEmail").addClass("red-color");
+         $("#ContactFormFirstName").removeClass("red-color");
+         $(".custom-tootip.email").show();
+         $(".custom-tootip.name").hide();
+           $(".both-tooltips").hide();
+           $(".custom-tootip.email2").hide();
+         return;
+       }
+       if (!isValidEmail(C_Email)){
+          e.preventDefault();
+          $("#ContactFormEmail").addClass("red-color");
+         $("#ContactFormFirstName").removeClass("red-color");
+         $(".custom-tootip.email2").show();
+         $(".custom-tootip.email").hide();
+         $(".custom-tootip.name").hide();
+           $(".both-tooltips").hide();
+         return;
+       }
+       if (isValidEmail(C_Email) && First_Name == "") {
+            e.preventDefault();
+          $("#ContactFormFirstName").addClass("red-color");
+         $("#ContactFormEmail").removeClass("red-color");
+           $(".custom-tootip.name").show();
+           $(".both-tooltips").hide();
+           $(".custom-tootip.email").hide();
+           $(".custom-tootip.email2").hide();
+           return;
+         }
+        $("#ContactFormEmail , #ContactFormFirstName").removeClass("red-color");
+     });
+     function isValidEmail(email) {
+       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       return emailRegex.test(email);
+     }
+   });
+</script>
+
+<div class="email-access-sec">
+  <div class="container">
+    <div class="inner-holder">
+      <div class="col">
+        <img class="mobile" src="{{ section.settings.image_mobile | img_url: 'medium' }}">
+        <img class="desktop" src="{{ section.settings.image_desktop | img_url: 'medium' }}">
+      </div>
+      <div class="col txt-holder">
+        <h3>{{ section.settings.heading }}</h3>
+        <p>{{ section.settings.paragraph_text }}</p>
+        <p>
+          <strong>{{ section.settings.form_heading }}</strong>
+        </p>
+        {% form 'customer' %}
+          <div class="email-form">
+            {{ form.errors | default_errors }}
+            {% if request.design_mode %}
+              {% liquid
+                assign email_exists = false
+                for block in section.blocks
+                  if block.type == 'email_input'
+                    assign email_exists = true
+                  endif
+                endfor
+              %}
+              {% if email_exists == false %}
+                <div class="error-message">You must include the Email input block for the form to work correctly.</div>
+              {% endif %}
+            {% endif %}
+
+            {% if form.posted_successfully? %}
+              <div class="form-success-data">
+                <h2 class="post_success">{{ 'contact.form.post_success' | t }}</h2>
+                <div class="form_success_desc">{{ 'contact.form.post_success_desc' | t }}</div>
+              </div>
+            {% else %}
+              <div class="form-group">
+                <span class="both-tooltips custom-tootip mob-arrow-p" style="display:none;">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-founded-by-lindsay-giguiere-validation-icon.png?v=1692390633"
+                    class="mob-arrow d-arrow-lg"
+                    style="max-width:20px;"
+                  >
+                  <span class="style-tooltip mob-arrow">Enter your First Name and Email </span>
+                </span>
+                <div class="field name-field">
+                  <span class="custom-tootip name" style="display:none"
+                    ><span class="style-tooltip">Enter your First Name</span
+                    ><img
+                      src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-founded-by-lindsay-giguiere-validation-icon.png?v=1692390633"
+                      class="bot-arrow"
+                      style="max-width:20px;"
+                  ></span>
+                  <input
+                    type="text"
+                    name="contact[first_name]"
+                    id="ContactFormFirstName"
+                    placeholder="Name"
+                    value="{% if form[first_name] %}{{ form[first_name] }}{% elsif customer %}{{ customer.first_name }}{% endif %}"
+                  >
+                </div>
+                <div class="field email-field">
+                  <span class="custom-tootip email" style="display:none"
+                    ><span class="style-tooltip">Enter your Email</span
+                    ><img
+                      src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-founded-by-lindsay-giguiere-validation-icon.png?v=1692390633"
+                      class="bot-arrow"
+                      style="max-width:20px;"
+                  ></span>
+                  <span class="custom-tootip email2" style="display:none"
+                    ><span class="style-tooltip">Enter Valid Address</span
+                    ><img
+                      src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-founded-by-lindsay-giguiere-validation-icon.png?v=1692390633"
+                      class="bot-arrow"
+                      style="max-width:20px;"
+                  ></span>
+                  <input
+                    type="email"
+                    name="contact[email]"
+                    id="ContactFormEmail"
+                    value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                    spellcheck="false"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    placeholder="Email"
+                  >
+                </div>
+              </div>
+              <input type="submit" class="btn btn-primary contact-form__submit submit_mhb" value="GET YOURS NOW">
+            {% endif %}
+          </div>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+ {
+  "name": "Airlines Guide",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+
+    },
+    {
+      "type": "textarea",
+      "label": "Paragraph Text",
+      "id": "paragraph_text"
+    },
+    {
+      "type": "textarea",
+      "label": "Form Heading",
+      "id": "form_heading"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "image_mobile"
+    },
+    {
+      "type": "image_picker",
+      "label": "Desktop Image",
+      "id": "image_desktop"
+    }
+  ],
+  "presets": [
+      {
+        "name": "Airlines Guides"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

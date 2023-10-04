@@ -1,0 +1,31 @@
+<div class="psa-inner-text">
+  <div class="psa-inner-container">
+    <p class="center-img">
+     <img src="{{ section.settings.image | img_url:'master' }}" alt="image">  
+    </p>
+  </div>
+</div>
+{% schema %}
+   {
+  "name": "Small Banner",
+     "class":"airline-custom",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+  ],
+  "presets": [
+      {
+        "name": "Air-Airline Small Banner"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

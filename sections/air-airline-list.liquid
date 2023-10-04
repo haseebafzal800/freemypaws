@@ -1,0 +1,45 @@
+<div class="psa-inner-text">
+  <div class="psa-inner-container">
+    <ul class="us-list">
+{% for block in section.blocks %}
+
+  <li>
+    {{ block.settings.list }}
+  </li>
+
+
+{% endfor %}
+  </ul>
+  </div>
+</div>
+{% schema %}
+ {
+  "name": "List Content",
+   "class":"airline-custom",
+  "blocks": [
+    {
+      "type": "List",
+      "name": "List",
+      "settings": [
+        {
+          "type": "text",
+          "label": "List Item",
+          "id": "list"
+        }
+      ]
+    }
+  ],
+   "presets": [
+     {
+       "name":"Airline List"
+     }
+   ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

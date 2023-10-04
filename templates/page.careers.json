@@ -1,0 +1,289 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "94755828-fdcc-4d9d-93f6-be05fe3d65a2": {
+      "type": "multi-options",
+      "blocks": {
+        "template--19880013955373__94755828-fdcc-4d9d-93f6-be05fe3d65a2-16888134859f9da326-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Develop Your Career with Felicitails",
+            "title_size": "H1",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "template--19880013955373__94755828-fdcc-4d9d-93f6-be05fe3d65a2-16888134859f9da326-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "",
+            "title_size": "H4",
+            "text": "<p>We invite you to explore an opportunity to work with a visionary company set to revolutionize telehealth and pet-care products. <\/p><p>Led by innovative, & passionate leaders whom seek to inspire while helping loving animal owners.<\/p><p><\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19880013955373__94755828-fdcc-4d9d-93f6-be05fe3d65a2-16888134859f9da326-0",
+        "template--19880013955373__94755828-fdcc-4d9d-93f6-be05fe3d65a2-16888134859f9da326-1"
+      ],
+      "settings": {
+        "title": "",
+        "enlarge_title": false,
+        "text_alignment": "left",
+        "url_style": "button_1",
+        "enable_custom_colors": false,
+        "color_title": "",
+        "color_text": "",
+        "color_bg": "",
+        "gradient_bg": "",
+        "custom_class": "mo-one",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    },
+    "fb490b71-d716-49a6-9f1a-1e2a9a3cc96f": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "max_page_width": 1000,
+        "image_title_top": "",
+        "image_title_top_size": "H1",
+        "image": "shopify:\/\/shop_images\/felicitails-founded-by-lindsay-giguiere-website-hero-we-are-hiring-careers-employment.png",
+        "image_link": "",
+        "image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "",
+        "overlay_text": "",
+        "overlay_url_text_1": "",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false,
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50,
+        "custom_class": "iwto-one"
+      }
+    },
+    "4cba6820-09c6-40a7-9f6f-d404d8873715": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {text-align: left;}",
+        "p {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Our Mission",
+        "title_size": "H3",
+        "sub_title": "",
+        "text": "<p>Foster healing for families and communities through loving pet and animal ownership.<br\/><br\/>On the surface our Mission seems surprisingly bold, but when brought into day-by-day efforts it becomes simply rewarding.<br\/><br\/>Let’s face it, we dedicate a ton our life’s time on our career, so we better make it count. Our diverse team of women and men (and even puppies running around either the office or the farm) are dedicated to making a difference in the communities we serve.<br\/><br\/>And we don’t just “market” our Mission, we live it … we are a Benefit Corporation, we are Sustainably built, we are Women Founded and Lead.<br\/><br\/>We hope you enjoy exploring opportunities with Greenfield Groves, as we truly look forward to becoming a part of your life-work experiences.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "296317f7-cedd-4790-8bda-1f8a41a6d476": {
+      "type": "come-join-us",
+      "blocks": {
+        "ad0432dd-ab15-45f8-a083-2e295e28f93c": {
+          "type": "name_input",
+          "settings": {
+          }
+        },
+        "f3dd6768-a154-478c-a0d7-4384e29f15ad": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Last Name",
+            "type": "text",
+            "required": true
+          }
+        },
+        "d08a890b-aa8a-4281-8e9d-99449ec31393": {
+          "type": "phone_input",
+          "settings": {
+            "required": false
+          }
+        },
+        "88a3c177-f53b-44c6-8634-8e69b94316c1": {
+          "type": "email_input",
+          "settings": {
+          }
+        },
+        "6c85a267-f1c7-4af4-b175-5b8881511675": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Location (City)",
+            "type": "text",
+            "required": true
+          }
+        },
+        "3ab20abe-dfc8-4c95-a5ba-fd7e49f2e28e": {
+          "type": "file_input",
+          "settings": {
+            "title": "Resume",
+            "required": true
+          }
+        },
+        "6a050469-d3da-4171-babe-3c31a69347c1": {
+          "type": "file_input",
+          "settings": {
+            "title": "Cover Letter",
+            "required": false
+          }
+        },
+        "b0d5b13f-8cd3-40ce-af2c-f3172986571f": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Linkedin Profile",
+            "type": "text",
+            "required": false
+          }
+        },
+        "9b7042ae-15e5-47b9-8bf8-254005e68445": {
+          "type": "custom_input",
+          "settings": {
+            "title": "How did you hear about this opportunity?",
+            "type": "text",
+            "required": true
+          }
+        },
+        "96414617-fa6e-4276-83f8-6df613bc2553": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Would you require visa sponsorship to work in the country in which this position is based?<\/p>"
+          }
+        },
+        "23d7bb61-27a2-411c-9b98-542db75fabc4": {
+          "type": "ys_radio",
+          "settings": {
+            "title": "a"
+          }
+        },
+        "720b5a5b-c558-4662-a49b-3c3cafc9dc70": {
+          "type": "gender_select",
+          "settings": {
+            "title": "Gender",
+            "required": false
+          }
+        },
+        "a6e9dfa3-f5e2-47bf-87d7-4e06375c6668": {
+          "type": "decline_to_answer_1",
+          "settings": {
+            "title": "I decline to answer the question above",
+            "text": "<p>U.S. Equal Opportunity Employment Information (Completion is voluntary)*Greenfield Groves Inc. is committed to creating a diverse workplace. In order to measure our efforts in this regard, we invite applicants to self-identify as to their gender, race\/ethnicity, and veteran status. Completion of this form is entirely voluntary and declining to provide this information will not subject you to adverse treatment. Any information that you do provide will be maintained confidentially and will not be shared with hiring managers.All individuals seeking employment at Airbnb are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, sexual orientation, or any other legally protected characteristic. You are being given the opportunity to provide the following information in order to help us measure our own diversity and inclusion efforts and to comply with applicable federal and state Equal Employment Opportunity record-keeping and reporting obligations.<\/p>"
+          }
+        },
+        "579ccdf6-030c-4557-9832-be9e34c02f4c": {
+          "type": "race_select",
+          "settings": {
+            "title": "Race",
+            "required": true
+          }
+        },
+        "c5bec007-eacf-4d51-a111-618587886bd5": {
+          "type": "decline_to_answer_2",
+          "settings": {
+            "title": "I decline to answer the question above",
+            "text": "<p><strong>Race & Ethnicity Definitions:<\/strong><\/p><p><strong>Hispanic or Latino:<\/strong> A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.<\/p><p><strong>White (Not Hispanic or Latino):<\/strong> A person having origins in any of the original peoples of Europe, the Middle East, or North Africa.<\/p><p><strong>Black or African American (Not Hispanic or Latino):<\/strong> A person having origins in any of the black racial groups of Africa.<\/p><p><strong>Asian (Not Hispanic or Latino):<\/strong> A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian Subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam.<\/p><p><strong>Native Hawaiian or Other Pacific Islander (Not Hispanic or Latino):<\/strong> A person having origins in any of the peoples of Hawaii, Guam, Samoa, or other Pacific Islands.<\/p><p><strong>American Indian or Alaska Native (Not Hispanic or Latino):<\/strong> A person having origins in any of the original peoples of North and South America (including Central America) and who maintain tribal affiliation or community attachment.<\/p><p><strong>Two or More Races (Not Hispanic or Latino):<\/strong> Persons who identify with two or more race categories named above.<\/p>"
+          }
+        },
+        "5394afea-a18b-4807-96cc-78e3f7108123": {
+          "type": "veteran_select",
+          "settings": {
+            "title": "Veteran Status",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "ad0432dd-ab15-45f8-a083-2e295e28f93c",
+        "f3dd6768-a154-478c-a0d7-4384e29f15ad",
+        "d08a890b-aa8a-4281-8e9d-99449ec31393",
+        "88a3c177-f53b-44c6-8634-8e69b94316c1",
+        "6c85a267-f1c7-4af4-b175-5b8881511675",
+        "3ab20abe-dfc8-4c95-a5ba-fd7e49f2e28e",
+        "6a050469-d3da-4171-babe-3c31a69347c1",
+        "b0d5b13f-8cd3-40ce-af2c-f3172986571f",
+        "9b7042ae-15e5-47b9-8bf8-254005e68445",
+        "96414617-fa6e-4276-83f8-6df613bc2553",
+        "23d7bb61-27a2-411c-9b98-542db75fabc4",
+        "720b5a5b-c558-4662-a49b-3c3cafc9dc70",
+        "a6e9dfa3-f5e2-47bf-87d7-4e06375c6668",
+        "579ccdf6-030c-4557-9832-be9e34c02f4c",
+        "c5bec007-eacf-4d51-a111-618587886bd5",
+        "5394afea-a18b-4807-96cc-78e3f7108123"
+      ],
+      "settings": {
+        "show_title": false,
+        "title_alignment": "left",
+        "use_columns": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "94755828-fdcc-4d9d-93f6-be05fe3d65a2",
+    "fb490b71-d716-49a6-9f1a-1e2a9a3cc96f",
+    "4cba6820-09c6-40a7-9f6f-d404d8873715",
+    "296317f7-cedd-4790-8bda-1f8a41a6d476"
+  ]
+}

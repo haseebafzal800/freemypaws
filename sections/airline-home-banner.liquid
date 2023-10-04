@@ -1,0 +1,50 @@
+{{ 'blogs.css' | asset_url | stylesheet_tag: preload: true }}
+<div class="blog-featured blog-category poppins-font psa-home-banner">
+  <div class="container-fluid">
+    <div class="content-container">
+      <p class="banner__subtitle">{{ section.settings.banner_subtitle }}</p>
+      <h1>{{ section.settings.banner_heading }}</h1>
+    </div>
+    <div class="blog-bg">
+       <img src="{{ section.settings.image | img_url:'master' }}" >
+      
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Airlines Main Banner",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Banner Subtitle",
+      "id": "banner_subtitle"
+     
+    },
+    {
+      "type": "text",
+      "label": "Banner Heading",
+      "id": "banner_heading"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+  ],
+  "presets": [
+      {
+        "name": "Airlines Banner Section"
+      }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

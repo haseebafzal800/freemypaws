@@ -1,0 +1,64 @@
+<div class="psa-bottom-links">
+  <div class="psa-inner-container">
+    <div class="links-holder">
+      {% if section.settings.bp-name %}
+      <a class="psa-link" href="{{ section.settings.bp_url }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+          <path d="M25 10.7285L15 20.7285L25 30.7285" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {{ section.settings.bp-name }}
+      </a>
+        {% endif %}
+        {% if section.settings.af-name %}
+      <a class="psa-link" href="{{ section.settings.af_url }}">
+       {{ section.settings.af-name }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+          <path d="M15 30.7285L25 20.7285L15 10.7285" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+          {% endif %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+ {
+  "name": "Pagination",
+   "class":"airline-custom",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Before Page Name",
+      "id": "bp-name"
+    },
+    {
+      "type": "url",
+      "label": "Before Page Link",
+      "id": "bp_url"
+    },
+    {
+      "type": "text",
+      "label": "After Page Name",
+      "id": "af-name"
+    },
+    {
+      "type": "url",
+      "label": "After Page Link",
+      "id": "af_url"
+    }
+  ],
+  "presets": [
+      {
+        "name": "Air-Airline Pagination"
+      }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

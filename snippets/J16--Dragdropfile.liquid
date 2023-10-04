@@ -1,0 +1,182 @@
+<style>
+    .J16--File_Field {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 25px;
+        border-radius: 6px;
+        border: 3px dashed #EAEAEA;
+        background-color: #fff;
+        transition: .3s;
+    }
+    .J16--File_Field.error {
+        border-color: #F35C5C;
+    }
+    .J16--File_Field:hover {
+        background: #EAEAE0;
+    }
+    .J16--File_Field.is-active {
+        background-color: #1a1a1a;
+    }
+    
+    .J16--File_Field .J16--emptyMsg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .J16--File_Field .J16--emptyMsg .J16--media {
+        margin-right: 10px;
+    }
+    .J16--File_Field .J16--emptyMsg p:first-child {
+        color: #000;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22.5px;
+        text-transform: uppercase;
+    }
+    .J16--File_Field .J16--emptyMsg p:first-child span {
+        color: #388E3C;
+        text-decoration-line: underline;
+    }
+    .J16--File_Field .J16--emptyMsg p:last-child {
+        color: #636363;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.5px;
+    }
+
+    .J16--File_Field .J16--delete {
+        display: none;
+        position: absolute;
+        right: 10px;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .J16--File_Field .J16--delete:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: .3s;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23bac1cb' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 438.5 438.5'%3e%3cpath d='M417.7 75.7A8.9 8.9 0 00411 73H323l-20-47.7c-2.8-7-8-13-15.4-18S272.5 0 264.9 0h-91.3C166 0 158.5 2.5 151 7.4c-7.4 5-12.5 11-15.4 18l-20 47.7H27.4a9 9 0 00-6.6 2.6 9 9 0 00-2.5 6.5v18.3c0 2.7.8 4.8 2.5 6.6a8.9 8.9 0 006.6 2.5h27.4v271.8c0 15.8 4.5 29.3 13.4 40.4a40.2 40.2 0 0032.3 16.7H338c12.6 0 23.4-5.7 32.3-17.2a64.8 64.8 0 0013.4-41V109.6h27.4c2.7 0 4.9-.8 6.6-2.5a8.9 8.9 0 002.6-6.6V82.2a9 9 0 00-2.6-6.5zm-248.4-36a8 8 0 014.9-3.2h90.5a8 8 0 014.8 3.2L283.2 73H155.3l14-33.4zm177.9 340.6a32.4 32.4 0 01-6.2 19.3c-1.4 1.6-2.4 2.4-3 2.4H100.5c-.6 0-1.6-.8-3-2.4a32.5 32.5 0 01-6.1-19.3V109.6h255.8v270.7z'/%3e%3cpath d='M137 347.2h18.3c2.7 0 4.9-.9 6.6-2.6a9 9 0 002.5-6.6V173.6a9 9 0 00-2.5-6.6 8.9 8.9 0 00-6.6-2.6H137c-2.6 0-4.8.9-6.5 2.6a8.9 8.9 0 00-2.6 6.6V338c0 2.7.9 4.9 2.6 6.6a8.9 8.9 0 006.5 2.6zM210.1 347.2h18.3a8.9 8.9 0 009.1-9.1V173.5c0-2.7-.8-4.9-2.5-6.6a8.9 8.9 0 00-6.6-2.6h-18.3a8.9 8.9 0 00-9.1 9.1V338a8.9 8.9 0 009.1 9.1zM283.2 347.2h18.3c2.7 0 4.8-.9 6.6-2.6a8.9 8.9 0 002.5-6.6V173.6c0-2.7-.8-4.9-2.5-6.6a8.9 8.9 0 00-6.6-2.6h-18.3a9 9 0 00-6.6 2.6 8.9 8.9 0 00-2.5 6.6V338a9 9 0 002.5 6.6 9 9 0 006.6 2.6z'/%3e%3c/svg%3e");
+    }
+
+    .J16--File_Field .J16--delete:after {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%) scale(0);
+        background-color: #f3dbff;
+        border-radius: 50%;
+        transition: .3s;
+    }
+
+    .J16--File_Field .J16--delete:hover:after {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 1;
+    }
+
+    .J16--File_Field .J16--delete:hover:before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%234f555f' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 438.5 438.5'%3e%3cpath d='M417.7 75.7A8.9 8.9 0 00411 73H323l-20-47.7c-2.8-7-8-13-15.4-18S272.5 0 264.9 0h-91.3C166 0 158.5 2.5 151 7.4c-7.4 5-12.5 11-15.4 18l-20 47.7H27.4a9 9 0 00-6.6 2.6 9 9 0 00-2.5 6.5v18.3c0 2.7.8 4.8 2.5 6.6a8.9 8.9 0 006.6 2.5h27.4v271.8c0 15.8 4.5 29.3 13.4 40.4a40.2 40.2 0 0032.3 16.7H338c12.6 0 23.4-5.7 32.3-17.2a64.8 64.8 0 0013.4-41V109.6h27.4c2.7 0 4.9-.8 6.6-2.5a8.9 8.9 0 002.6-6.6V82.2a9 9 0 00-2.6-6.5zm-248.4-36a8 8 0 014.9-3.2h90.5a8 8 0 014.8 3.2L283.2 73H155.3l14-33.4zm177.9 340.6a32.4 32.4 0 01-6.2 19.3c-1.4 1.6-2.4 2.4-3 2.4H100.5c-.6 0-1.6-.8-3-2.4a32.5 32.5 0 01-6.1-19.3V109.6h255.8v270.7z'/%3e%3cpath d='M137 347.2h18.3c2.7 0 4.9-.9 6.6-2.6a9 9 0 002.5-6.6V173.6a9 9 0 00-2.5-6.6 8.9 8.9 0 00-6.6-2.6H137c-2.6 0-4.8.9-6.5 2.6a8.9 8.9 0 00-2.6 6.6V338c0 2.7.9 4.9 2.6 6.6a8.9 8.9 0 006.5 2.6zM210.1 347.2h18.3a8.9 8.9 0 009.1-9.1V173.5c0-2.7-.8-4.9-2.5-6.6a8.9 8.9 0 00-6.6-2.6h-18.3a8.9 8.9 0 00-9.1 9.1V338a8.9 8.9 0 009.1 9.1zM283.2 347.2h18.3c2.7 0 4.8-.9 6.6-2.6a8.9 8.9 0 002.5-6.6V173.6c0-2.7-.8-4.9-2.5-6.6a8.9 8.9 0 00-6.6-2.6h-18.3a9 9 0 00-6.6 2.6 8.9 8.9 0 00-2.5 6.6V338a9 9 0 002.5 6.6 9 9 0 006.6 2.6z'/%3e%3c/svg%3e");
+    }
+
+    .J16--File_Field .J16--file_input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .J16--File_Field .J16--file_input:focus {
+        outline: none;
+    }
+    .J16--fillMsg {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .J16--fileIcon {
+        margin-right: 15px;
+    }
+    @media (max-width: 768px) {
+        .J16--File_Field {
+            padding: 15px 20px 15px 15px;
+            border-width: 2px;
+        }
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        const $droparea = $('.J16--File_Field');
+        const $delete = $('.J16--delete');
+
+        $(document).on('dragover dragenter click', '.J16--file_input', function () {
+            $(this).parent().addClass('is-active');
+        });
+
+        $(document).on('dragleave blur drop', '.J16--file_input', function () {
+            $(this).parent().removeClass('is-active');
+        });
+
+        $(document).on('change', '.J16--file_input', function () {
+            let filesCount = $(this)[0].files.length;
+            let $textContainer = $(this).parent().children('.J16--fillMsg');
+
+            if (filesCount === 1) {
+                let fileName = $(this).val().split('\\').pop();
+                let fileFormat = $(this).val().split('.').pop().toLowerCase();
+
+                if (fileFormat == 'pdf') {
+                    $textContainer.children('.J16--fileIcon').attr('src', 'https://free-my-paws.myshopify.com/cdn/shop/files/J16--pdf.svg?v=1688125026');
+                    $(this).parents('.J16--File_Field').removeClass('error');
+                    $textContainer.children('.J16--content').text(fileName);
+                } else if (fileFormat == 'doc' || fileFormat == 'docx') {
+                    $(this).parents('.J16--File_Field').removeClass('error');
+                    $textContainer.children('.J16--fileIcon').attr('src', 'https://free-my-paws.myshopify.com/cdn/shop/files/J16--doc.svg?v=1688125026');
+                    $textContainer.children('.J16--content').text(fileName);
+                } else {
+                    $(this).parent().children('.J16--file_input').val(null);
+                    $(this).parents('.J16--File_Field').addClass('error');
+                    $textContainer.children('.J16--fileIcon').attr('src', 'https://free-my-paws.myshopify.com/cdn/shop/files/error-file-icon.svg?v=1688125026');
+                    $textContainer.children('.J16--content').text('File format is wrong. Please select a pdf or doc again.');
+                }
+                $(this).parent().children('.J16--emptyMsg').css('display', 'none');
+                $(this).parent().children('.J16--fillMsg').css('display', 'flex');
+                $(this).parent().children('.J16--delete').css('display', 'inline-block');
+            } else if (filesCount === 0) {
+                $(this).parents('.J16--File_Field').removeClass('error');
+                $(this).parent().children('.J16--emptyMsg').css('display', 'flex');
+                $(this).parent().children('.J16--fillMsg').css('display', 'none');
+                $(this).parent().children('.J16--delete').css('display', 'none');
+            }
+        });
+
+        $delete.on('click', function () {
+            $(this).parent().children('.J16--file_input').val(null);
+            $(this).parent().children('.J16--emptyMsg').css('display', 'flex');
+            $(this).parent().children('.J16--fillMsg').css('display', 'none');
+            $(this).parent().children('.J16--delete').css('display', 'none');
+        });
+    })
+</script>

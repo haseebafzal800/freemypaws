@@ -1,0 +1,31 @@
+{% assign mfield = blog.metafields.custom.main_banner.value %}
+
+
+<div class="blog-featured blog-category poppins-font">
+  <div class="container-fluid">
+    <div class="content-container">
+      <span class="cate-head">{{ blog.title }}</span>
+      {% if mfield.heading %}
+        <p class="banner__subtitle">{{ mfield.heading }}</p>
+      {% endif %}
+    </div>
+    <div class="blog-bg">
+      {% if mfield.banner %}
+        <img src="{{ mfield.banner | img_url: '2048x'}}" alt="blog-banner">
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Category Bannner",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Category Bannner"
+      }
+    ]
+  }
+{% endschema %}

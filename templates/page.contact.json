@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "94c2752d-1d85-4940-9097-5ebf81dc5f77": {
+      "type": "rich-text",
+      "settings": {
+        "title": "CONTACT US TO START A CONVERSATION",
+        "title_size": "H1",
+        "sub_title": "",
+        "text": "<p>We value every pet parent and dog enthusiast's perspective and would love to hear from you. To start conversation, simply fill out the form below and send us your ideas, questions, in fact anything dog-related. Our team is ready and excited to fetch your messages and provide prompt responses.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image": "shopify:\/\/shop_images\/contact-felicitails-team-dogs-traveling-collage-felicitails-founded-by-lindsay-giguiere.png",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "main": {
+      "type": "contact-page-custom",
+      "blocks": {
+        "name": {
+          "type": "name_input",
+          "settings": {
+          }
+        },
+        "63b35ee5-ae6b-4c31-9ea6-79c933b6692b": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Last Name",
+            "type": "text",
+            "required": true
+          }
+        },
+        "39a6c65a-df44-4150-ba12-7660f3543c93": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Company Name(type in N\/A if personal)",
+            "type": "text",
+            "required": false
+          }
+        },
+        "311b5ba4-f743-4319-9092-95fd7c6bea71": {
+          "type": "email_input",
+          "settings": {
+          }
+        },
+        "a2fbc92d-267b-44e4-bb83-04ecd7915525": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Country",
+            "type": "text",
+            "required": false
+          }
+        },
+        "message": {
+          "type": "message_input",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "e6e77214-1db5-4940-825c-04c7a5addf20": {
+          "type": "custom_input",
+          "settings": {
+            "title": "Comments",
+            "type": "textarea",
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "name",
+        "63b35ee5-ae6b-4c31-9ea6-79c933b6692b",
+        "39a6c65a-df44-4150-ba12-7660f3543c93",
+        "311b5ba4-f743-4319-9092-95fd7c6bea71",
+        "a2fbc92d-267b-44e4-bb83-04ecd7915525",
+        "message",
+        "e6e77214-1db5-4940-825c-04c7a5addf20"
+      ],
+      "custom_css": [
+        "h3 {padding-left: 30px;}"
+      ],
+      "settings": {
+        "show_title": true,
+        "title_alignment": "left",
+        "use_columns": true
+      }
+    },
+    "913282ff-c9e2-4d6d-9840-c724913076ae": {
+      "type": "multi-options",
+      "blocks": {
+        "template--19402227089709__913282ff-c9e2-4d6d-9840-c724913076ae-1689078241906dadfc-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/contact-felicitails-free-my-paws-telehealth-services-founded-by-lindsay-giguiere-happy-big-eared-golden-retriever-dog.png",
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "",
+            "title_size": "H4",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "template--19402227089709__913282ff-c9e2-4d6d-9840-c724913076ae-1689078241906dadfc-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Support Email",
+            "title_size": "P",
+            "text": "<p>mailto:support@felicitails.com<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "template--19402227089709__913282ff-c9e2-4d6d-9840-c724913076ae-1689078241906dadfc-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "image_border_radius": 20,
+            "enable_icon": false,
+            "enable_paw_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Collaborations & Media Inquires Email",
+            "title_size": "P",
+            "text": "<p>mailto:info@felicitails.com<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19402227089709__913282ff-c9e2-4d6d-9840-c724913076ae-1689078241906dadfc-0",
+        "template--19402227089709__913282ff-c9e2-4d6d-9840-c724913076ae-1689078241906dadfc-1",
+        "template--19402227089709__913282ff-c9e2-4d6d-9840-c724913076ae-1689078241906dadfc-2"
+      ],
+      "settings": {
+        "title": "Points Of Contact",
+        "enlarge_title": false,
+        "text_alignment": "left",
+        "url_style": "button_1",
+        "enable_custom_colors": false,
+        "color_title": "",
+        "color_text": "",
+        "color_bg": "",
+        "gradient_bg": "",
+        "custom_class": "mo-one",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    }
+  },
+  "order": [
+    "94c2752d-1d85-4940-9097-5ebf81dc5f77",
+    "main",
+    "913282ff-c9e2-4d6d-9840-c724913076ae"
+  ]
+}

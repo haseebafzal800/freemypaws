@@ -1,0 +1,692 @@
+{
+  "sections": {
+    "f4d23210-b950-436f-b063-b19c0f7bcdf7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"psa-inner-head\">\n  <div class=\"psa-inner-container\">\n    <h1>{{ page.title }}<\/h1>\n    <p>{{ page.content }}<\/p>\n  <\/div>\n<\/div>"
+      }
+    },
+    "c8367a36-038c-4719-9b39-be828440c1a3": {
+      "type": "air-airline-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-volaris-airline-felicitails-is-founded-by-lindsay-giguiere-final.jpg"
+      }
+    },
+    "4e69ac03-761b-4fa9-b51c-10bc13a2c8e4": {
+      "type": "air-airline-content",
+      "blocks": {
+        "0eff36b0-f580-4417-9368-3edd628c9a7e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Happy Travels with Your PSA by Your Side"
+          }
+        },
+        "62e2741d-ce1c-41fd-a5bf-c5061c9338b3": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Want advice on how to make air travel with your PSA smooth and hassle-free? Check out our definitive guide to flying with a PSA, where we go through everything you need to travel successfully with your faithful companion by your side!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0eff36b0-f580-4417-9368-3edd628c9a7e",
+        "62e2741d-ce1c-41fd-a5bf-c5061c9338b3"
+      ],
+      "settings": {
+      }
+    },
+    "112a4f40-cb95-4b09-90f8-fc4c9cd879c2": {
+      "type": "custom-image-with-text-airline",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-close-up-view-woman-that-standing-airport-with-tickets-hand.jpg",
+        "banner_heading": "Get ready for your flight on Volaris with a therapist-certified Free My Paws Travel Letter through Felicitails.",
+        "content": "",
+        "btn_name": "Click here to begin today!",
+        "btn_url": "https:\/\/felicitails.com\/pages\/free-my-paws-psychiatric-service-animal-dog-certification"
+      }
+    },
+    "c6977024-6a79-46a9-810b-1f357ebdbc67": {
+      "type": "air-airline-content",
+      "blocks": {
+        "29eb4130-2066-4df0-8121-5032c65b750e": {
+          "type": "heading",
+          "settings": {
+            "heading": "What is a Psychiatric Services Animal (PSA) Letter for Travel?"
+          }
+        },
+        "1db9c84b-74d5-4572-a502-75b78d78249f": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>A PSA Letter for Travel which has been certified by a licensed health profession allows a service dog to accompany its owner on flights at no additional charge. It is created by a certified mental health professional after a therapy session to assess applicability, and confirms that you have a disability or condition that will be serviced by a properly trained animal, typically a dog.<\/p><p>This means you are legally allowed to travel with a psychiatric service animal in the cabin with you at <strong>no extra cost.<\/strong><\/p>"
+          }
+        },
+        "22a3db06-7b84-417c-8338-b1a7514c67be": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Do I Get a PSA Letter for Travel?"
+          }
+        },
+        "8936f814-b56e-42ad-a36f-9efa48d61dbf": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Obtaining a Free My Paws PSA letter for travel through Felicitails is simple. Start with our short questionnaire to be matched with one of our in-house certified therapists. If you qualify, you'll typically receive your letter within 24 hours.<\/p>"
+          }
+        },
+        "f10ba9cf-bd26-4bce-af7a-26d56d9469f4": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Conditions Qualify for a PSA Letter for Travel?"
+          }
+        },
+        "77640d95-b3cd-4e3a-8cb0-dd421bd19afd": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>To qualify for a PSA letter, a licensed mental health professional will need to assess your needs and create a prescribed treatment plan for a relevant mental or emotional health disability such as depression, ADHD, autism, or an anxiety disorder of which requires physical assistance of an animal such as tactile pressure.<\/p>"
+          }
+        },
+        "fae800fa-8eba-4eae-a88b-fea5711fee92": {
+          "type": "heading",
+          "settings": {
+            "heading": "Can I use a Free My Paws Travel Letter to fly with my Emotional Support Animal (ESA)?"
+          }
+        },
+        "37c1a62e-68ba-4e58-86dc-472b9aadf643": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>No, you can’t use an ESA Travel Letter from Free My Paws to fly free of charge with your ESA on Volaris under the same conditions as a service animal. This is due to recent legal changes which mean that virtually no airline will accept ESAs. <br\/><br\/>However, you may be able to fly with your ESA subject to the same terms and fees applied to regular pets.<\/p>"
+          }
+        },
+        "aaa05c0d-d7b9-44ee-9327-ba4d4d42fb9b": {
+          "type": "heading",
+          "settings": {
+            "heading": "What's the Difference Between an Emotional Support Animal and a Psychiatric Service Animal?"
+          }
+        },
+        "066e8c54-5c6b-4004-8bd5-c0d41802be99": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>ESAs and PSAs (Psychiatric Service Animals) help their human companions similarly. Both help reduce stress in anxiety-causing situations. <\/p>"
+          }
+        },
+        "ff45d52c-2c0c-4b0b-8c14-5a9a7bc4a262": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>While the qualifying processes for an ESA and a PSA are similar, service animal training focuses on specific tasks. Depending on your needs, your PSA may perform a few critical tasks, for example: <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "29eb4130-2066-4df0-8121-5032c65b750e",
+        "1db9c84b-74d5-4572-a502-75b78d78249f",
+        "22a3db06-7b84-417c-8338-b1a7514c67be",
+        "8936f814-b56e-42ad-a36f-9efa48d61dbf",
+        "f10ba9cf-bd26-4bce-af7a-26d56d9469f4",
+        "77640d95-b3cd-4e3a-8cb0-dd421bd19afd",
+        "fae800fa-8eba-4eae-a88b-fea5711fee92",
+        "37c1a62e-68ba-4e58-86dc-472b9aadf643",
+        "aaa05c0d-d7b9-44ee-9327-ba4d4d42fb9b",
+        "066e8c54-5c6b-4004-8bd5-c0d41802be99",
+        "ff45d52c-2c0c-4b0b-8c14-5a9a7bc4a262"
+      ],
+      "settings": {
+      }
+    },
+    "924ba295-85e2-4c5e-b743-5f7530b29284": {
+      "type": "air-airline-list",
+      "blocks": {
+        "3dec6787-f44b-4f9f-970a-8ffb638cdde2": {
+          "type": "List",
+          "settings": {
+            "list": "Detecting early signs of a panic attack "
+          }
+        },
+        "7d661968-6759-40f5-9abe-3beccd63912b": {
+          "type": "List",
+          "settings": {
+            "list": "Applying calming tactile pressure "
+          }
+        },
+        "f6125059-4473-47ab-bff5-a668c0374ba5": {
+          "type": "List",
+          "settings": {
+            "list": "Fetching medication"
+          }
+        },
+        "7e1e2fbf-6392-4af7-8694-fc5357be2ac2": {
+          "type": "List",
+          "settings": {
+            "list": "Signaling to others that you need space"
+          }
+        },
+        "6c6dcb50-a817-4889-83ed-a86bd68bfa7a": {
+          "type": "List",
+          "settings": {
+            "list": "Seeking outside assistance if you're in danger"
+          }
+        }
+      },
+      "block_order": [
+        "3dec6787-f44b-4f9f-970a-8ffb638cdde2",
+        "7d661968-6759-40f5-9abe-3beccd63912b",
+        "f6125059-4473-47ab-bff5-a668c0374ba5",
+        "7e1e2fbf-6392-4af7-8694-fc5357be2ac2",
+        "6c6dcb50-a817-4889-83ed-a86bd68bfa7a"
+      ],
+      "settings": {
+      }
+    },
+    "bc1d588e-93a0-4f1c-9778-c05bfc7c5269": {
+      "type": "air-airline-content",
+      "blocks": {
+        "d9405182-1813-42a6-b3f2-064f5f519384": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Your PSA will need to be trained to meet the required standard. The effective and affordable Basic Obedience Program from Free My Paws is a great starting point. <a href=\"#\" title=\"#\">Click here to find out more.<\/a><\/p>"
+          }
+        },
+        "3219067e-f9e3-4006-ba42-60578da0a607": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to Obtain a Legally-Valid Free My Paws Psychiatric Service Animal Travel Letter through Felicitails"
+          }
+        },
+        "b44437ec-5742-48c2-8a65-42fb38707ac2": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Felicitails, through our Free My Paws certification program, makes obtaining your legally-valid Psychiatric Service Animal Travel Letter a breeze! <\/p>"
+          }
+        },
+        "a455c335-173c-492b-85b7-b3cb81002cec": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Start by completing our easy online questionnaire, and schedule your telehealth consultation with one of our licensed therapists. If you need a PSA for your mental health prescription, your Free My Paws Travel Letter will typically be issued within 24 hours. <a href=\"#\" title=\"#\">Click here for details<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d9405182-1813-42a6-b3f2-064f5f519384",
+        "3219067e-f9e3-4006-ba42-60578da0a607",
+        "b44437ec-5742-48c2-8a65-42fb38707ac2",
+        "a455c335-173c-492b-85b7-b3cb81002cec"
+      ],
+      "settings": {
+      }
+    },
+    "65b0138f-015d-4d6f-a019-c4e5b052ce93": {
+      "type": "image-with-content-cards",
+      "blocks": {
+        "d82bff3e-b13b-4bf9-827d-95379811e6e1": {
+          "type": "Card",
+          "settings": {
+            "image_c": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-dot-service-animal-transport-form.png",
+            "banner_heading_c": "U.S. DOT Service Animal Transport Form",
+            "details": "",
+            "btn_name": "learn more",
+            "btn_url": ""
+          }
+        },
+        "eb50bbc8-3a46-40de-9d0b-826269fb2d2b": {
+          "type": "Card",
+          "settings": {
+            "image_c": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-department-of-transportation-animal-relief-attestation-form.png",
+            "banner_heading_c": "Animal Relief Attestation Form",
+            "details": "(for flights over 8 hours)",
+            "btn_name": "Learn more",
+            "btn_url": ""
+          }
+        },
+        "709806f8-bc80-4ee3-9d6c-825c9acfbff0": {
+          "type": "Card",
+          "settings": {
+            "image_c": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-hawaiian-airlines-SAGARPA-SENASICA-forms.png",
+            "banner_heading_c": "sagarpa\/senasica",
+            "details": "",
+            "btn_name": "learn more",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d82bff3e-b13b-4bf9-827d-95379811e6e1",
+        "eb50bbc8-3a46-40de-9d0b-826269fb2d2b",
+        "709806f8-bc80-4ee3-9d6c-825c9acfbff0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-felicitails-masscot-duke-golden-retriever-flying-hat.png",
+        "banner_heading": "How to Fly With a PSA on Volaris",
+        "content": "<p>It’s essential to obtain and submit all the required documentation in advance of your flight. <\/p><p>You must comply with Air Canada’s  service dog policy and submit a completed <a href=\"#\" title=\"#\">US DOT Service Animal Air Transportation Form<\/a>. <\/p><p>While the <a href=\"#\" title=\"#\">US DOT Service Animal Air Transportation Form<\/a> is the essential requirement, and you will need to submit it to the airline in advance - generally at least 48 hours before your flight, you'll also need to complete the airline's application to fly with your PSA.<\/p><p>The Free My Paws therapist-certified Psychiatric Service Animal letter for travel verifies that you'll need your service animal on your flight.<\/p><p>The three documents you'll need to complete and submit to the airline to fly with a PSA:<\/p>"
+      }
+    },
+    "a82e5a14-0139-4e62-be9b-27c58eaf9450": {
+      "type": "air-airline-content",
+      "blocks": {
+        "c2614ae2-e550-44d1-b4d8-175df824c55d": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>You must also sign the Volaris pet transportation form. They will provide this at the airport counters.<\/p>"
+          }
+        },
+        "6823e863-7107-48c2-8271-b248659c6050": {
+          "type": "heading",
+          "settings": {
+            "heading": "Additional Documents for Passengers Traveling to Hawaii with a PSA"
+          }
+        },
+        "2c7a7b58-ac06-4c92-8e3c-aaee4fc81cef": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Passengers traveling to Hawaii with a PSA must provide documentation required by the <a href=\"#\" title=\"#\">strict guidelines and programs<\/a> in place to prevent rabies. Without this, a service animal can be quarantined for 120 days in Honolulu at the owner's expense.<\/p>"
+          }
+        },
+        "e77d9950-4743-43cd-981f-40366c85bc9b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Additional Documentation for International Travelers"
+          }
+        },
+        "c9de132b-31b9-4c9f-ad1e-fff9ed150d71": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Passengers traveling to international destinations must ensure they have all of the specific documentation required by the country they are traveling to. Otherwise, the service animal may be quarantined at the owner's expense, and the airline will bear no responsibility for this or any additional costs incurred.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c2614ae2-e550-44d1-b4d8-175df824c55d",
+        "6823e863-7107-48c2-8271-b248659c6050",
+        "2c7a7b58-ac06-4c92-8e3c-aaee4fc81cef",
+        "e77d9950-4743-43cd-981f-40366c85bc9b",
+        "c9de132b-31b9-4c9f-ad1e-fff9ed150d71"
+      ],
+      "settings": {
+      }
+    },
+    "45f8680a-d1c9-403f-87c4-4f91944bbe8f": {
+      "type": "image-with-content-cards",
+      "blocks": {
+        "b31e76ff-efe8-4d50-8b82-dfcb2c3f5f19": {
+          "type": "Card",
+          "settings": {
+            "banner_heading_c": "",
+            "details": "",
+            "btn_name": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "b31e76ff-efe8-4d50-8b82-dfcb2c3f5f19"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-felicitails-masscot-duke-golden-retriever-checking-to-fligh.png",
+        "banner_heading": "Volaris's Service Animal \/ Dog Policies",
+        "content": "<p>If your animal companion is a PSA (Psychiatric Service Animal) and you have all the correct DOT documentation, you'll be good to go! <br\/><br\/>The <a href=\"#\" title=\"#\">DOT form<\/a> requires you to accept responsibility for any damages the animal may cause.<br\/><br\/><strong>Seating arrangements<\/strong><br\/><br\/>For individuals with service animals, the dog should be positioned on the floor area near your feet during the flight. If your dog is small enough, you have the option to hold it in your lap. <br\/><br\/>If your dog is traveling in a carrier, it is recommended to keep it inside the carrier during takeoff and landing. However, once the flight is airborne, you may take your dog out of the carrier, subject to airline policies and guidelines.<br\/><br\/>Check out Volaris’s latest Service Dog Policy <a href=\"#\" title=\"#\">here<\/a><\/p><p><\/p><p><\/p>"
+      }
+    },
+    "32b99121-88a0-44aa-a45a-126a14d88aad": {
+      "type": "air-airline-content",
+      "blocks": {
+        "e55e7e8c-69ad-469c-8577-8536e4853b00": {
+          "type": "heading",
+          "settings": {
+            "heading": "Volaris PSA Travel Letter Policies"
+          }
+        },
+        "c65858d4-74c8-4580-8b40-0d1d36bd3534": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Volaris doesn't explicitly require a PSA letter to fly with your Psychiatric Service Animal. <br\/>However, having a Free My Paws PSA Travel Letter for travel and your required <a href=\"#\" title=\"#\">DOT forms<\/a> can help smooth check-in and inspection at the airport. <br\/><br\/>Any airline can ask questions about what tasks the PSD performs to support your disability. The easiest way to prove that your psychiatric service dog is a service animal is to provide the airline with an official PSD letter from Free My Paws, through Felicitails.<\/p><p><\/p><p><\/p>"
+          }
+        },
+        "a8916ad4-321a-40c5-b66b-4145595f40d7": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Much Advance Notice Does Volaris Require?"
+          }
+        },
+        "6f00ab33-0360-41d7-89a4-2c1dea74b79a": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Volaris provides convenient check-in options on their<a href=\"https:\/\/www.volaris.com\/\" title=\"https:\/\/www.volaris.com\/\"> website<\/a> and mobile app, ensuring a hassle-free experience. <br\/><br\/>Additionally, you can utilize WhatsApp <strong>(+52 55 5898 8599)<\/strong> to check in and inform the airline about any additional services needed for your service animal. <br\/><br\/>Another communication channel available is Facebook Messenger, allowing you to contact the airline easily.<\/p>"
+          }
+        },
+        "914003dd-1062-4c3f-aa94-6ed66cd18011": {
+          "type": "heading",
+          "settings": {
+            "heading": "What About Longer Flights with a PSA?"
+          }
+        },
+        "3678ac42-709d-4a10-9832-9e2c9507c557": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>If your Air Canada flight lasts eight hours or longer, you must complete the <a href=\"#\" title=\"#\">US DOT's Service Animal Relief Attestation Form<\/a>. You must certify that your PSA will either not urinate or defecate on the plane or can do so hygienically.<\/p>"
+          }
+        },
+        "58cf486f-cfa2-4a82-9f7d-1ada75d929ed": {
+          "type": "heading",
+          "settings": {
+            "heading": "Volaris's Breed Restrictions"
+          }
+        },
+        "4097e6a5-5f99-473f-9804-d5ae756c1db3": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Volaris breed restrictions apply to all animals, whether they are PSAs or regular pets.The policy does not specify breed restrictions for service dogs or pets in the cabin. <br\/><br\/>For passengers traveling with brachycephalic animals, it is mandatory to sign a liability waiver. <br\/><br\/>Certain breeds that are deemed aggressive or dangerous, including Anatolian Shepherd and Belgian Shepherd, Akita Inu, Brazilian Mastiff, Rottweiler, Doberman, and Tosa Inu, are prohibited from being onboard or transported in the cargo hold.<br\/><br\/>Finally, Volaris can deny any service animal if it poses a health and safety risk, causes a disruption while in the airport, or is too large to fit in the cabin. <\/p>"
+          }
+        },
+        "88962f94-ba4d-406e-a7ea-223784883b13": {
+          "type": "heading",
+          "settings": {
+            "heading": "Volaris’s Pet Carrier Size Requirements"
+          }
+        },
+        "d7f36992-5e3e-4ca1-8c0a-403b013daf7b": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>To bring your animal in the cabin, you must ensure that the carrier is suitable for air transport and adheres to certain dimensions. The carrier should not exceed 17.5 inches in length, 12 inches in width, and 7.5 inches in height. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e55e7e8c-69ad-469c-8577-8536e4853b00",
+        "c65858d4-74c8-4580-8b40-0d1d36bd3534",
+        "a8916ad4-321a-40c5-b66b-4145595f40d7",
+        "6f00ab33-0360-41d7-89a4-2c1dea74b79a",
+        "914003dd-1062-4c3f-aa94-6ed66cd18011",
+        "3678ac42-709d-4a10-9832-9e2c9507c557",
+        "58cf486f-cfa2-4a82-9f7d-1ada75d929ed",
+        "4097e6a5-5f99-473f-9804-d5ae756c1db3",
+        "88962f94-ba4d-406e-a7ea-223784883b13",
+        "d7f36992-5e3e-4ca1-8c0a-403b013daf7b"
+      ],
+      "settings": {
+      }
+    },
+    "5201f019-d7e2-48e6-b835-d2bad4707fff": {
+      "type": "air-airline-list",
+      "blocks": {
+        "a15e7a21-0aaa-4818-997f-c48798af80b9": {
+          "type": "List",
+          "settings": {
+            "list": "Boeing 789: 20H x 40W x 43L centimeters "
+          }
+        },
+        "8d40cac7-e35e-43db-b813-96d7173b247b": {
+          "type": "List",
+          "settings": {
+            "list": "Boeing 788: 20H x 40W x 35L centimeters"
+          }
+        },
+        "2145f3a3-8759-4de9-a902-b4375f2d4e03": {
+          "type": "List",
+          "settings": {
+            "list": "Boeing 777-300ER and 777-200LR: 21H x 38W x 43L centimeters"
+          }
+        }
+      },
+      "block_order": [
+        "a15e7a21-0aaa-4818-997f-c48798af80b9",
+        "8d40cac7-e35e-43db-b813-96d7173b247b",
+        "2145f3a3-8759-4de9-a902-b4375f2d4e03"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "c6736d5e-8b73-4c56-b4d5-51e473a129de": {
+      "type": "air-airline-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-katziela-dog-travel-carrier.png"
+      }
+    },
+    "ccba055e-bd2a-4f1f-a3f5-c7e4a5d18861": {
+      "type": "air-airline-content",
+      "blocks": {
+        "25b6483e-9cf8-4dbd-8f7c-c78fc3bbbe6e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Are Pet Carriers Part of VolarisBaggage Allowance?"
+          }
+        },
+        "d0ac2011-b954-4ce3-958d-9c9154992378": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p>Yes, pet carriers count as part of Volaris’s carry-on baggage allowance.<\/p>"
+          }
+        },
+        "fd7d04a0-6a67-490a-83f0-4699fb152870": {
+          "type": "heading",
+          "settings": {
+            "heading": "Make Flying with Your Psychiatric Service Animal Easy!"
+          }
+        }
+      },
+      "block_order": [
+        "25b6483e-9cf8-4dbd-8f7c-c78fc3bbbe6e",
+        "d0ac2011-b954-4ce3-958d-9c9154992378",
+        "fd7d04a0-6a67-490a-83f0-4699fb152870"
+      ],
+      "settings": {
+      }
+    },
+    "f8970c7a-f92f-4378-9a1c-2a0b84dee9e5": {
+      "type": "air-airline-list",
+      "blocks": {
+        "ada10f7d-175d-4e6f-964d-e11bc20d20e1": {
+          "type": "List",
+          "settings": {
+            "list": "Don't assume your PSA dog can handle airline travel if they've never flown before. Check with your dog's veterinarian and trainer to discuss travel suitability and options. If possible, visit the airport in advance."
+          }
+        },
+        "638ddcf9-43ef-4797-a09b-2a3794b8f1ac": {
+          "type": "List",
+          "settings": {
+            "list": "US DOT and airline service animal rules can change anytime, so check for any updates before booking your ticket."
+          }
+        },
+        "3b73955c-8754-4e7f-8ede-463f3a7d9d82": {
+          "type": "List",
+          "settings": {
+            "list": "Confirm any quarantines, restrictions, or embargoes before your flight."
+          }
+        },
+        "ccc72e28-1ce7-4b30-a974-5a1e169e3314": {
+          "type": "List",
+          "settings": {
+            "list": "Have ready access to your documents to make it easy for airline staff to check them. You'll save time and hassles during the check-in process."
+          }
+        },
+        "b29a8e70-85ee-4435-b29a-287a1e1b1c96": {
+          "type": "List",
+          "settings": {
+            "list": " Have written descriptions of the tasks performed by your service dog ready for checking."
+          }
+        },
+        "9d7bc824-1200-4233-bffd-fa2034b13833": {
+          "type": "List",
+          "settings": {
+            "list": "Exercise your dog before heading to the airport."
+          }
+        },
+        "fa439351-cb0d-4fa4-9e41-cfe161bf0ad8": {
+          "type": "List",
+          "settings": {
+            "list": "Inform airport security that your dog is a service dog."
+          }
+        },
+        "685c8035-21a7-4ba3-9281-7455c7d38b9c": {
+          "type": "List",
+          "settings": {
+            "list": "Cooperate with airport staff and keep your dog under control at all times."
+          }
+        },
+        "f595bebd-364c-444e-a2dd-1e81b9e02147": {
+          "type": "List",
+          "settings": {
+            "list": "Avoid overfeeding and overwatering your dog before your flight - offer them food and water as soon as possible after you land."
+          }
+        }
+      },
+      "block_order": [
+        "ada10f7d-175d-4e6f-964d-e11bc20d20e1",
+        "638ddcf9-43ef-4797-a09b-2a3794b8f1ac",
+        "3b73955c-8754-4e7f-8ede-463f3a7d9d82",
+        "ccc72e28-1ce7-4b30-a974-5a1e169e3314",
+        "b29a8e70-85ee-4435-b29a-287a1e1b1c96",
+        "9d7bc824-1200-4233-bffd-fa2034b13833",
+        "fa439351-cb0d-4fa4-9e41-cfe161bf0ad8",
+        "685c8035-21a7-4ba3-9281-7455c7d38b9c",
+        "f595bebd-364c-444e-a2dd-1e81b9e02147"
+      ],
+      "settings": {
+      }
+    },
+    "e08950a9-fa10-409b-b3bc-98b47d16e8c9": {
+      "type": "air-airline-content",
+      "blocks": {
+        "9b91b954-0cf0-4f43-8aaa-e45814046cd4": {
+          "type": "heading",
+          "settings": {
+            "heading": "The ACAA and Your Right to Fly with a PSA"
+          }
+        },
+        "5c7aea7c-9aea-4ba0-8031-127835aab5e4": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p><strong>What Is the Effect of the ACAA (Air Carrier Access Act)? <\/strong><\/p><p>The ACAA prohibits discrimination based on passengers' disabilities and mandates airlines to offer accessibility features and facilities. These accommodations include ramps and mechanical lifts, adjustable armrests, easy-access restrooms, and facilities for mobility aids and service animals. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9b91b954-0cf0-4f43-8aaa-e45814046cd4",
+        "5c7aea7c-9aea-4ba0-8031-127835aab5e4"
+      ],
+      "settings": {
+      }
+    },
+    "57a891bb-37e6-4aa2-bd18-b914cc05ba8d": {
+      "type": "air-airline-small-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-acaa-psa-travel-rights.png"
+      }
+    },
+    "6e59041a-727f-4692-8fe9-ddc6bee29f65": {
+      "type": "air-airline-content",
+      "blocks": {
+        "d59c0a59-b910-4dac-b513-862daa4787a4": {
+          "type": "paragraph",
+          "settings": {
+            "content": "<p><strong>Emotional Support Animals and the ACAA<\/strong><\/p><p>The ACAA originally defined service animals as those trained to assist people with disabilities.<\/p><p>However, a 2003 DOT policy update permitted ESAs inside airplane cabins. This change allowed eligible passengers to be accompanied by an emotional support dog, cat, or other animal in the cabin.<\/p><p>ESAs do not have to be trained to perform specific tasks. Their presence alone supports people dealing with anxiety, PTSD, OCD, depression, and other mental health conditions, but the animal does not provide a physical service to treat the ailment.<\/p><p>The 2003 DOT policy change didn't limit the species that could serve as ESAs. However, air carriers faced unique challenges as passengers brought animals they claimed were ESAs without legitimate documentation. <\/p><p><strong>This is one of the reasons that most airlines, including Air Canada, no longer allow Emotional Support Animals to fly with their owner in the cabin.<\/strong><\/p><p>An ESA letter will not exempt you from the airline's regulations and fees for pet travel. However, complying with the ADA, they permit Psychiatric Service Animals \/ Dogs (PSAs), which carry out functions similar to ESAs for people with mental and emotional support needs. <\/p><p>Check out the ACAA guidelines <a href=\"#\" title=\"#\">here<\/a>.<\/p><p>Want to read the full explanation of the DOT's recent ruling on service animals? <a href=\"#\" title=\"#\">Click here<\/a><\/p>"
+          }
+        },
+        "ca22123e-a274-410e-97fd-a228615a99d0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Service Animals \/ Dogs and the ACAA"
+          }
+        }
+      },
+      "block_order": [
+        "d59c0a59-b910-4dac-b513-862daa4787a4",
+        "ca22123e-a274-410e-97fd-a228615a99d0"
+      ],
+      "settings": {
+      }
+    },
+    "46a2d96e-02b5-4876-af87-3e00505d5d95": {
+      "type": "air-airline-list",
+      "blocks": {
+        "08431682-5bb4-43bb-9a37-df398694db74": {
+          "type": "List",
+          "settings": {
+            "list": "Your service animal must be allowed to accompany you in the space under the seat in front of you."
+          }
+        },
+        "4f3ff65b-a21d-49ae-a8f3-f88bea5bf92f": {
+          "type": "List",
+          "settings": {
+            "list": "Your service animal must not block a space that must be clear for safety reasons (e.g. an aisle or access to an emergency exit)."
+          }
+        },
+        "d401b44e-80a7-4308-8202-f85027f33eeb": {
+          "type": "List",
+          "settings": {
+            "list": "Airlines do not have to upgrade you to a different class to accommodate your service animal."
+          }
+        },
+        "0fa0c74e-7edd-4341-b9d8-04c66c32dc61": {
+          "type": "List",
+          "settings": {
+            "list": "Airlines do not have the right to refuse your service animal onboard because it makes other passengers or flight crew uncomfortable."
+          }
+        },
+        "2efa3487-c6e6-4711-9dbb-5483a30b0ad9": {
+          "type": "List",
+          "settings": {
+            "list": "Your service animal must behave appropriately. An animal that displays disruptive behavior (ex. barking, snarling, running around, and\/or jumping onto others etc.) will not be accepted as a service animal."
+          }
+        }
+      },
+      "block_order": [
+        "08431682-5bb4-43bb-9a37-df398694db74",
+        "4f3ff65b-a21d-49ae-a8f3-f88bea5bf92f",
+        "d401b44e-80a7-4308-8202-f85027f33eeb",
+        "0fa0c74e-7edd-4341-b9d8-04c66c32dc61",
+        "2efa3487-c6e6-4711-9dbb-5483a30b0ad9"
+      ],
+      "settings": {
+      }
+    },
+    "6abd785a-2553-4b69-8bc5-eff6d30cacde": {
+      "type": "custom-image-with-text-airline",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/psychiatric-service-dog-master-trainer-toriano-sanzone-training-academy-results-through-felicitails-training-courses-felicitails-founded-by-lindsay-giguiere.jpg",
+        "banner_heading": "ARE YOU CONFIDENT THAT YOUR DOG KNOWS HOW TO BEHAVE APPROPRIATELY IN AIRPORTS AND ON FLIGHTS, SO IT CAN QUALIFY AS A PSA?",
+        "content": "<p>Contact the Felicitails Team at <a href=\"mailto:support@felicitails.com\" title=\"mailto:support@felicitails.com\"><strong>support@felicitails.com<\/strong><\/a> to discuss how our PSA Training Academy can assist in training your animal. Learn from the service animal experts and ensure your companion will behave nicely on their travels.<\/p>",
+        "btn_name": "learn more",
+        "btn_url": "shopify:\/\/pages\/psychiatric-service-animal-training-program"
+      }
+    },
+    "798b7681-f396-42ac-a05e-f1f92b272f46": {
+      "type": "air-airline-pagination-links",
+      "settings": {
+        "bp-name": "Virgin Atlantic",
+        "bp_url": "shopify:\/\/pages\/pyschiactric-service-animal-dog-virgin-atlantic-airline-guide-to-flying-with-your-psa",
+        "af-name": "WestJet",
+        "af_url": "shopify:\/\/pages\/pyschiactric-service-animal-dog-westjet-airline-guide-to-flying-with-your-psa"
+      }
+    },
+    "6e99392f-2ded-4380-8827-501bf1cd49ab": {
+      "type": "airline-small-bottom-banner",
+      "settings": {
+        "banner_url": "#",
+        "image_d": "shopify:\/\/shop_images\/bytetag-banner-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png",
+        "image_m": "shopify:\/\/shop_images\/bytetag-tower-felicitails-brand-collaboration-felicitails-is-founded-by-lindsay-giguiere.png"
+      }
+    }
+  },
+  "order": [
+    "f4d23210-b950-436f-b063-b19c0f7bcdf7",
+    "c8367a36-038c-4719-9b39-be828440c1a3",
+    "4e69ac03-761b-4fa9-b51c-10bc13a2c8e4",
+    "112a4f40-cb95-4b09-90f8-fc4c9cd879c2",
+    "c6977024-6a79-46a9-810b-1f357ebdbc67",
+    "924ba295-85e2-4c5e-b743-5f7530b29284",
+    "bc1d588e-93a0-4f1c-9778-c05bfc7c5269",
+    "65b0138f-015d-4d6f-a019-c4e5b052ce93",
+    "a82e5a14-0139-4e62-be9b-27c58eaf9450",
+    "45f8680a-d1c9-403f-87c4-4f91944bbe8f",
+    "32b99121-88a0-44aa-a45a-126a14d88aad",
+    "5201f019-d7e2-48e6-b835-d2bad4707fff",
+    "c6736d5e-8b73-4c56-b4d5-51e473a129de",
+    "ccba055e-bd2a-4f1f-a3f5-c7e4a5d18861",
+    "f8970c7a-f92f-4378-9a1c-2a0b84dee9e5",
+    "e08950a9-fa10-409b-b3bc-98b47d16e8c9",
+    "57a891bb-37e6-4aa2-bd18-b914cc05ba8d",
+    "6e59041a-727f-4692-8fe9-ddc6bee29f65",
+    "46a2d96e-02b5-4876-af87-3e00505d5d95",
+    "6abd785a-2553-4b69-8bc5-eff6d30cacde",
+    "798b7681-f396-42ac-a05e-f1f92b272f46",
+    "6e99392f-2ded-4380-8827-501bf1cd49ab"
+  ]
+}

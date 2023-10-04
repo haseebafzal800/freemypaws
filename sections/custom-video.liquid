@@ -1,0 +1,189 @@
+<div id="vid-txt-{{ section.id }}" class="vid-text-con section-{{ section.id }} {{ section.settings.custom_class }}">
+  {% if section.settings.image_title_top != blank %}
+  <div class="page-width pwt-center">
+    <h2>{{ section.settings.image_title_top }}</h2>
+  </div>
+  {% endif %}
+  <div class="vid-text-wra container" >
+    <div class="vid-with-text-box">
+      <div class="video-section">
+        <div class="m_video">
+          {% if section.settings.select == 'MP4' %}
+          {% if section.settings.vid != blank %}
+            <video width="100%" height="100%" playinline {% if section.settings.check %}autoplay loop{% endif %} {% if section.settings.poster != blank %}poster="{{ section.settings.poster |img_url: 'master' }}"{% endif %} loading='lazy'>
+            <source src="{{ section.settings.vid }}" type="video/mp4">
+            <source src="{{ section.settings.vid }}" type="video/ogg">
+            </video>
+          {% endif %}
+          {% else %}
+          {% if section.settings.i_vid != blank %}
+            <iframe width="100%" height="315" src="{{ section.settings.i_vid }}{% if section.settings.vid_auto %}?autoplay=1{% endif %}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-width button-style">
+    {% if section.settings.button_label_bottom != blank %}
+      {%- assign inherit_colour = false -%}
+      {%- if section.settings.url_style_bottom == 'link_style' -%}
+        {%- assign alpha = section.settings.color_bg | color_extract: 'alpha' -%}
+        {%- if alpha > 0 and section.settings.color_bg != settings.color_body_background -%}
+          {%- assign inherit_colour = true -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      <a class="image-with-text__link {% if section.settings.url_style_bottom == 'button_1' %}btn btn--small btn--primary{% elsif section.settings.url_style_bottom == 'button_2' %}btn btn--small btn--secondary{% else %}standard-link {% if inherit_colour %}standard-link--inherit-color{% endif %}{% endif %}" href="{{ section.settings.button_link_bottom }}">
+        {{ section.settings.button_label_bottom }}
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+
+<script>
+ $(document).ready(function() {
+    $(".m_video").click(function() {
+      var videoElement = $(this).children("video")[0];
+      if (videoElement.paused) {
+        videoElement.play();
+      } else {
+        videoElement.pause();
+      }
+      $(this).toggleClass("hide-after");
+    });
+  });
+</script>
+
+<style>
+.video-section {
+  width: 100%;
+  height: 100%;
+}
+.m_video {
+  height: 100%;
+}
+.m_video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.section-btn {
+  margin-top: 40px;
+}
+div.pwt-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.button-style {
+  display: flex;
+  justify-content: center;
+}
+  {% if section.settings.max_page_width != 1000 %}
+    .section-{{ section.id }} .page-width {
+      max-width: {{ section.settings.max_page_width }}px;
+    }
+  {% endif %}
+  div.m_video video {
+    border-radius: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    div.m_video video {
+      border-radius: 0px;
+    }
+  }
+</style>
+
+ 
+
+{% schema %}
+{
+  "name": "Video Custom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "image_title_top",
+      "label": "image_title_top"
+    },
+    {
+      "type": "range",
+      "id": "max_page_width",
+      "min": 1000,
+      "max": 2800,
+      "step": 18,
+      "unit": "px",
+      "label": "Max Page Width",
+      "default": 1000
+    },
+    {
+      "type": "radio",
+      "id": "select",
+      "label": "Video type",
+      "options": [
+        {
+          "value": "MP4",
+          "label": "MP4"
+        },
+        {
+          "value": "iframe",
+          "label": "Youtube/Vimeo"
+        }
+      ],
+      "default": "MP4"
+    },
+    {
+      "type": "url",
+      "id": "vid",
+      "label": "MP4 video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster",
+      "label": "Poster on MP4 video"
+    },
+    {
+      "type": "checkbox",
+      "id": "check",
+      "label": "Video autoplay"
+    },
+    {
+      "type": "url",
+      "id": "i_vid",
+      "label": "Youtube/Vimeo video URL"
+    },
+    {
+      "type": "text",
+      "id": "button_label_bottom",
+      "label": "Button_bottom"
+    },
+    {
+      "type": "url",
+      "id": "button_link_bottom",
+      "label": "Button link"
+    },
+    {
+      "type": "radio",
+      "id": "url_style_bottom",
+      "label": "Button style",
+      "options": [
+        { "value": "button_1", "label": "Button - primary" },
+        { "value": "button_2", "label": "Button - secondary" },
+        { "value": "link_style", "label": "Link"}
+      ],
+      "default": "link_style"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Video Custom"
+      }
+    ]
+}
+{% endschema %}

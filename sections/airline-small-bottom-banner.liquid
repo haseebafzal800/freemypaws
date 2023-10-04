@@ -1,0 +1,47 @@
+<div class="tower-ad pas-home-tower-banner">
+  <div class="psa-inner-container">
+    <a href=" {{ section.settings.banner_url }}" class="ad-banner mobileView" title="">
+      <img src="{{ section.settings.image_m | img_url:'master' }}" alt="ad-banner">
+    </a>
+    <a href="{{ section.settings.banner_url }}" class="ad-banner desktopView" title="">
+        <img src="{{ section.settings.image_d | img_url:'master' }}" alt="ad-banner">
+      </a>
+  </div>
+</div>
+
+ {% schema %}
+  {
+  "name": "Bottom Banner",
+    "class":"airline-custom",
+  "settings": [
+     {
+      "type": "url",
+      "label": "Image Link",
+      "id": "banner_url"
+    },
+    {
+        "type": "image_picker",
+        "id": "image_d",
+        "label": "Desktop Banner Image"
+      },
+    {
+        "type": "image_picker",
+        "id": "image_m",
+        "label": "Mobile Banner Image"
+      }
+    
+   
+  ],
+  "presets": [
+      {
+        "name": "Air-Airline Bottom Banner"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

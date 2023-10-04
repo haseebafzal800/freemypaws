@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "4cc81b41-0601-4741-a51f-7bbac2bce339": {
+      "type": "airline-home-banner",
+      "settings": {
+        "banner_subtitle": "A Comprehensive Guide to PSA Policies on US Airlines",
+        "banner_heading": "Flying with Your Psychiatric Service Animal",
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-felicitails-is-founded-by-lindsay-giguiere-dog-in-airport.jpg"
+      }
+    },
+    "a7fa90a9-c080-4a5b-af9d-f9ef354febea": {
+      "type": "airline-pageslist",
+      "blocks": {
+        "ada18ca9-a531-479c-be70-f8c6b6fe6906": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-air-canada-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Air Canada",
+            "description": "Everything You Need to Know About Air Canada Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/psychiatric-service-animal-dog-air-canada-airline-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "ee188c47-d875-44f6-9220-e8a3b4300b27": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-alaska-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Alaska Airlines",
+            "description": "Everything You Need to Know About Alaska Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-alaska-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "a095edf9-0864-472b-a36e-ea73adf907ba": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-alegiant-airline-felicitails-is-founded-by-lindsay-giguiere_1.png",
+            "heading": "Allegiant Airlines",
+            "description": "Everything You Need to Know About Allegiant Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-allegiant-airline-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "e486fce5-5aba-4ced-b117-38be3a406487": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-american-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "American Airlines",
+            "description": "Everything You Need to Know About American Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-american-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "9b7afdd3-9c53-4549-9b95-37e0c5270279": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-delta-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Delta Airlines",
+            "description": "Everything You Need to Know About Delta Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-delta-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "140d2614-0ae3-44f5-b593-f147e6fa27ee": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-frontier-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Frontier Airlines",
+            "description": "Everything You Need to Know About Frontier Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-frontier-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "a131899c-3f02-4020-86d4-12c2cdc19d51": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-hawaiian-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Hawaiian Airlines",
+            "description": "Everything You Need to Know About Hawaiian Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-hawaiian-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "b747f92d-9ae7-479c-aea6-6c728e2bb024": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-jetblue-airways-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "JetBlue Airways",
+            "description": "Everything You Need to Know About JetBlue Airways Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-jetblue-airline-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "3f28afe4-d225-4b55-8e7a-6a0eb79aaa47": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-southwest-airlines-felicitails-is-founded-by-lindsay-giguiere.jpg",
+            "heading": "Southwest Airlines",
+            "description": "Everything You Need to Know About Southwest Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-southwest-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "7f8f414f-abdd-4800-81f8-7bb14fee0faa": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-spirit-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Spirit Airlines",
+            "description": "Everything You Need to Know About Spirit Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-spirit-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "3ed575f1-63db-40d2-9518-5ceb8e1dd248": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-united-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "United Airlines",
+            "description": "Everything You Need to Know About United Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-united-airlines-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "9da368b2-3cae-4630-82eb-92f5bbb17b0b": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-virgin-atlantic-airlines-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Virgin Atlantic",
+            "description": "Everything You Need to Know About Virgin Atlantic’s Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-virgin-atlantic-airline-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "95f60df7-2749-46d1-8539-4e2029802059": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-volaris-airline-felicitails-is-founded-by-lindsay-giguiere-final.jpg",
+            "heading": "Volaris Airlines",
+            "description": "Everything You Need to Know About Volaris Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-volaris-airline-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        },
+        "e1b3b07a-22bb-42e8-b274-9ccf7f8b62bc": {
+          "type": "pagesdetails",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-wetjet-airline-felicitails-is-founded-by-lindsay-giguiere.jpg",
+            "heading": "WestJet Airlines",
+            "description": "Everything You Need to Know About WestJet Airlines Psychiatric Service Animal (PSA\/PSD) Policies",
+            "link": "shopify:\/\/pages\/pyschiactric-service-animal-dog-westjet-airline-guide-to-flying-with-your-psa",
+            "link_title": "Read More"
+          }
+        }
+      },
+      "block_order": [
+        "ada18ca9-a531-479c-be70-f8c6b6fe6906",
+        "ee188c47-d875-44f6-9220-e8a3b4300b27",
+        "a095edf9-0864-472b-a36e-ea73adf907ba",
+        "e486fce5-5aba-4ced-b117-38be3a406487",
+        "9b7afdd3-9c53-4549-9b95-37e0c5270279",
+        "140d2614-0ae3-44f5-b593-f147e6fa27ee",
+        "a131899c-3f02-4020-86d4-12c2cdc19d51",
+        "b747f92d-9ae7-479c-aea6-6c728e2bb024",
+        "3f28afe4-d225-4b55-8e7a-6a0eb79aaa47",
+        "7f8f414f-abdd-4800-81f8-7bb14fee0faa",
+        "3ed575f1-63db-40d2-9518-5ceb8e1dd248",
+        "9da368b2-3cae-4630-82eb-92f5bbb17b0b",
+        "95f60df7-2749-46d1-8539-4e2029802059",
+        "e1b3b07a-22bb-42e8-b274-9ccf7f8b62bc"
+      ],
+      "settings": {
+        "main_heading": "Everything You Need to Know About Airline Psychiatric Service Animal (PSA\/PSD) Policies",
+        "promotion_heading": "Let one of our Licensed Therapists Certify you for a Psychiatric Service Animal (PSA) Today",
+        "promotional_details": "Fly legally with your Service Animal and at no cost by certifying through our Free My Paws PSA program!",
+        "promotional_image": "shopify:\/\/shop_images\/felicitails-psychiatric-service-dog-intro-video-felicitails-is-founded-by-lindsay-giguiere-matched.jpg",
+        "promotional_link": "shopify:\/\/pages\/free-my-paws-psychiatric-service-animal-dog-certification",
+        "promo_link_title": "Learn More"
+      }
+    },
+    "8c6c1507-ae77-4243-be1c-28a380b678b7": {
+      "type": "airline-guide",
+      "settings": {
+        "heading": "Want to Learn More About Flying with your Psychiatric Service Animal Guide?",
+        "paragraph_text": "Download our FREE guide with detailed information on over 14 US based domestic airlines. ...",
+        "form_heading": "Enter your First Name field and your Email field",
+        "image_mobile": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-your-your-psa-felicitails-is-founded-by-lindsay-giguiere-mobile.png",
+        "image_desktop": "shopify:\/\/shop_images\/felicitails-free-my-paws-psychiatric-service-animial-dog-airline-guide-to-flying-with-your-your-psa-felicitails-is-founded-by-lindsay-giguiere-desktop.png"
+      }
+    }
+  },
+  "order": [
+    "4cc81b41-0601-4741-a51f-7bbac2bce339",
+    "a7fa90a9-c080-4a5b-af9d-f9ef354febea",
+    "8c6c1507-ae77-4243-be1c-28a380b678b7"
+  ]
+}

@@ -1,0 +1,613 @@
+{% style %}
+  .section-newsletter .subscribe-form__inputs {
+    width: 100%;
+  }
+  form.contact-form {
+    display: flex;
+  }
+  .section-{{ section.id }} div.title-top {
+    max-width: 1030px;
+  }
+  .section-{{ section.id }} div.page-width h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media only screen and (min-width: 768px) {
+    .section-{{ section.id }} div.page-width {
+      background: #F9F9F9;
+      max-width: 1030px;
+      border-radius: 20px;
+      padding: 60px 106px;
+    }
+    form.contact-form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    form.contact-form {
+      flex-direction: column;
+    }
+    div.contact-page__container .page-width {
+      padding-right: 0px;
+      padding-left: 0px!important;
+    }
+    div.grid__item.one-half.small-down--one-whole {
+      padding-left: 0px;
+    }
+  }
+{% endstyle %}
+
+{% render 'J16--Dragdropfile' %}
+
+<div class="section-{{ section.id }}">
+  <div class="container contact-page__container text-{{ section.settings.title_alignment }} title-top">
+    <h3 class="giant-title {% if section.settings.use_columns or section.settings.show_map_section %}page-width{% else %}reading-width{% endif %} {% unless section.settings.show_title %}visually-hidden{% endunless %}">To Best Support You All Fields Are Required</h3>
+    <!-- <div class="rte clearfix">
+      {{ page.content }}
+    </div> -->
+  </div>
+  <div class="container contact-page__container">
+    {% if section.settings.use_columns %}
+      <div class="page-width row">
+        <h3>Come join us!</h3>
+        <div class="grid">
+    {% else %}
+      <div class="large-row reading-width">
+    {% endif %}
+
+<!--     <div class="contact-img">
+        <img src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/contact-felicitails-team-dogs-traveling-collage-felicitails-founded-by-lindsay-giguiere.png?v=1681375523">
+    </div> -->
+
+  </div>
+{% form 'contact', enctype: 'multipart/form-data' %}
+  {% if section.settings.use_columns %}
+    <div class="grid__item one-half small-down--one-whole">
+    {% else %}
+    <div class="row reading-width">
+  {% endif %}
+
+    
+      {% if form.posted_successfully? %}
+        <p class="form-success">
+          {{ 'contact.form.post_success' | t }}
+        </p>
+      {% endif %}
+
+      {{ form.errors | default_errors }}
+
+      {% if request.design_mode %}
+      {% liquid
+        assign email_exists = false
+        for block in section.blocks
+          if block.type == 'email_input'
+            assign email_exists = true
+          endif
+        endfor %}
+        {% if email_exists == false %}
+          <div class="error-message">You must include the Email input block for the form to work correctly.</div>
+        {% endif %}
+      {% endif %}
+
+      {% assign amount = 0 %}
+        {% for block in section.blocks %}
+          {% assign amount = amount | plus:1 %}
+        {% if amount == 3 %}
+        </div>
+        <div class="grid__item one-half small-down--one-whole">
+        {% endif %}
+        {% if amount == 5 %}
+        </div>
+        <div class="grid__item small-down--one-whole">
+        {% endif %}
+        {% case block.type %}
+          {% when 'name_input' %}
+            <div class="input-wrapper form-row">
+              <label for="ContactFormName required">First Name <span>*</span></label>
+              <input type="text"
+                name="contact[name]"
+                id="ContactFormName"
+                value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                required>
+            </div>
+
+          {% when 'email_input' %}
+            <div class="input-wrapper form-row">
+              <label for="ContactFormEmail">{{ 'contact.form.email' | t }} <span>*</span></label>
+              <input type="email"
+                name="contact[email]"
+                id="ContactFormEmail"
+                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                spellcheck="false"
+                autocomplete="off"
+                autocapitalize="off"
+                required>
+            </div>
+
+          {% when 'phone_input' %}
+            <div class="input-wrapper form-row">
+              <label for="ContactFormPhone">{{ 'contact.form.phone' | t }} <span>*</span></label>
+              <input type="tel"
+                name="contact[phone]"
+                id="ContactFormPhone"
+                {% if block.settings.required %}required{% endif %}
+                value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                pattern="[0-9\-]*">
+              </div>
+
+          {% when 'message_input' %}
+            <div class="input-wrapper form-row input-wrapper--padded">
+              <label for="ContactFormMessage">{{ 'contact.form.message' | t }} <span>*</span></label>
+              <textarea rows="10" name="contact[body]" id="ContactFormMessage" required>{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            </div>
+
+          {% when 'text' %}
+            <div class="rte J16--text-wraper">{{ block.settings.text }}</div>
+
+          {% when 'custom_input' %}
+            {% unless block.settings.title == blank %}
+              <div class="input-wrapper form-row">
+                {%- assign title_handle = block.settings.title | handle -%}
+                <label for="contact_{{ title_handle }}">{{ block.settings.title | escape }} {% if block.settings.required %}<span>*</span>{% endif %}</label>
+                {% if block.settings.type == 'textarea' %}
+                  <textarea
+                    id="contact_{{ title_handle }}"
+                    name="contact[{{ title_handle }}]"
+                    {% if block.settings.required %}required{% endif %}>
+                    {{- form[title_handle] -}}
+                  </textarea>
+                {% else %}
+                  <input
+                    type="{{ block.settings.type }}"
+                    id="contact_{{ title_handle }}"
+                    name="contact[{{ title_handle }}]"
+                    value="{{ form[title_handle] }}"
+                    {% if block.settings.required %}required{% endif %}/>
+                {% endif %}
+              </div>
+            {% endunless %}
+          {% when 'file_input' %}
+            {% unless block.settings.title == blank %}
+              <div class="input-wrapper form-row">
+                {%- assign title_handle = block.settings.title | handle -%}
+                <label for="contact_{{ title_handle }}">{{ block.settings.title | escape }}{% if block.settings.required %} <span>*</span>{% endif %}</label>
+                <div class="J16--File_Field">
+                  <div class="J16--emptyMsg">
+                    <div class="J16--media">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+                        <path d="M28.2113 11.2574L20.5551 3.60117C20.4534 3.49963 20.3328 3.41912 20.2 3.36423C20.0672 3.30933 19.9249 3.28114 19.7812 3.28125H6.65625C6.07609 3.28125 5.51969 3.51172 5.10945 3.92195C4.69922 4.33219 4.46875 4.88859 4.46875 5.46875V29.5312C4.46875 30.1114 4.69922 30.6678 5.10945 31.078C5.51969 31.4883 6.07609 31.7188 6.65625 31.7188H26.3438C26.9239 31.7188 27.4803 31.4883 27.8905 31.078C28.3008 30.6678 28.5312 30.1114 28.5312 29.5312V12.0312C28.5314 11.8876 28.5032 11.7453 28.4483 11.6125C28.3934 11.4797 28.3129 11.3591 28.2113 11.2574ZM20.875 7.01504L24.7975 10.9375H20.875V7.01504ZM26.3438 29.5312H6.65625V5.46875H18.6875V12.0312C18.6875 12.3213 18.8027 12.5995 19.0079 12.8046C19.213 13.0098 19.4912 13.125 19.7812 13.125H26.3438V29.5312ZM21.9688 18.5938C21.9688 18.8838 21.8535 19.162 21.6484 19.3671C21.4433 19.5723 21.1651 19.6875 20.875 19.6875H12.125C11.8349 19.6875 11.5567 19.5723 11.3516 19.3671C11.1465 19.162 11.0312 18.8838 11.0312 18.5938C11.0312 18.3037 11.1465 18.0255 11.3516 17.8204C11.5567 17.6152 11.8349 17.5 12.125 17.5H20.875C21.1651 17.5 21.4433 17.6152 21.6484 17.8204C21.8535 18.0255 21.9688 18.3037 21.9688 18.5938ZM21.9688 22.9688C21.9688 23.2588 21.8535 23.537 21.6484 23.7421C21.4433 23.9473 21.1651 24.0625 20.875 24.0625H12.125C11.8349 24.0625 11.5567 23.9473 11.3516 23.7421C11.1465 23.537 11.0312 23.2588 11.0312 22.9688C11.0312 22.6787 11.1465 22.4005 11.3516 22.1954C11.5567 21.9902 11.8349 21.875 12.125 21.875H20.875C21.1651 21.875 21.4433 21.9902 21.6484 22.1954C21.8535 22.4005 21.9688 22.6787 21.9688 22.9688Z" fill="#636363"/>
+                      </svg>
+                    </div>
+                    <div class="J16--content">
+                      <p><span>Click To Upload</span> Or Drag and drop</p>
+                      <p>You can attach your file on pdf or doc formats</p>
+                    </div>
+                  </div>
+                  <div class="J16--fillMsg">
+                    <img src="" class="J16--fileIcon" alt="File Icon" width="25px" height="auto" />
+                    <div class="J16--content"></div>
+                  </div>
+                  <input
+                    type="file"
+                    id="contact_{{ title_handle }}"
+                    name="contact[{{ title_handle }}]"
+                    value="{{ form[title_handle] }}"
+                    accept=".pdf,.doc,.docx"
+                    class="J16--file_input"
+                    {% if block.settings.required %}required{% endif %} />
+                  <div class="J16--delete"></div>
+                </div>
+              </div>
+            {% endunless %}
+          {% when 'ys_radio' %}
+              <div class="input-wrapper form-row J16--Radio">
+                <label for="contact_{{ title_handle }}_01">
+                  <input
+                    type="radio"
+                    id="contact_{{ title_handle }}_01"
+                    name="contact[{{ title_handle }}]"
+                    value="{{ form[title_handle] }}"
+                    {% if block.settings.required %}required{% endif %}/>
+                  Yes</label>
+                <label for="contact_{{ title_handle }}_02">
+                  <input
+                    type="radio"
+                    id="contact_{{ title_handle }}_02"
+                    name="contact[{{ title_handle }}]"
+                    value="{{ form[title_handle] }}"
+                    {% if block.settings.required %}required{% endif %}/>
+                  No</label>
+              </div>
+          {% when 'gender_select' %}
+            {% unless block.settings.title == blank %}
+              <div class="input-wrapper form-row">
+                {%- assign title_handle = block.settings.title | handle -%}
+                <label for="contact_{{ title_handle }}">{{ block.settings.title | escape }} <span>*</span></label>
+                  <select
+                    id="contact_{{ title_handle }}"
+                    name="contact[{{ title_handle }}]"
+                    required>
+                    <option value="">Please identify your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+              </div>
+            {% endunless %}
+          {% when 'one_radio' %}
+            <div class="rte J16--Radio">
+              <label for="contact_{{ title_handle }}">
+                <input
+                  type="radio"
+                  id="contact_{{ title_handle }}"
+                  name="contact[{{ title_handle }}]"
+                  value="{{ form[title_handle] }}"
+                  {% if block.settings.required %}required{% endif %}/>
+                {{ block.settings.title | escape }}</label>
+            </div>
+          {% when 'race_select' %}
+            {% unless block.settings.title == blank %}
+              <div class="input-wrapper form-row">
+                {%- assign title_handle = block.settings.title | handle -%}
+                <label for="contact_{{ title_handle }}">{{ block.settings.title | escape }} <span>*</span></label>
+                <select
+                  id="contact_{{ title_handle }}"
+                  name="contact[{{ title_handle }}]"
+                  required>
+                  <option value="">Please identify your race</option>
+                  <option value="American Indian or Alaskan Native">American Indian or Alaskan Native</option>
+                  <option value="Black or African American">Black or African American</option>
+                  <option value="Hispanic or Latino">Hispanic or Latino</option>
+                  <option value="White">White</option>
+                  <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+                  <option value="Two or More Races">Two or More Races</option>
+                  <option value="Decline to Self Identify">Decline to Self Identify</option>
+                </select>
+              </div>
+            {% endunless %}
+          {% when 'veteran_select' %}
+            {% unless block.settings.title == blank %}
+              <div class="input-wrapper form-row">
+                {%- assign title_handle = block.settings.title | handle -%}
+                <label for="contact_{{ title_handle }}">{{ block.settings.title | escape }} <span>*</span></label>
+                <select
+                  id="contact_{{ title_handle }}"
+                  name="contact[{{ title_handle }}]"
+                  required>
+                  <option value="">Please identify your veteran status</option>
+                  <option value="I am a protected veteran">I am a protected veteran</option>
+                  <option value="I am not a protected veteran">I am not a protected veteran</option>
+                  <option value="Decline to Self Identify">Decline to Self Identify</option>
+                </select>
+              </div>
+            {% endunless %}
+          {% when 'decline_to_answer_1' %}
+            <div class="J16--Decline2answer">
+              <div class="J16--Radio">
+                <label for="contact_dta_1">
+                  <input
+                    type="radio"
+                    id="contact_dta_1"
+                    name="contact[{{ title_handle }}]"
+                    value="{{ form[title_handle] }}"
+                    {% if block.settings.required %}required{% endif %}/>
+                  {{ block.settings.title | escape }}</label>
+              </div>
+              <div class="J16--Content">
+                {{ block.settings.text }}
+              </div>
+            </div>
+          {% when 'decline_to_answer_2' %}
+            <div class="J16--Decline2answer">
+              <div class="J16--Radio">
+                <label for="contact_dta_2">
+                  <input
+                    type="radio"
+                    id="contact_dta_2"
+                    name="contact[{{ title_handle }}]"
+                    value="{{ form[title_handle] }}"
+                    {% if block.settings.required %}required{% endif %}/>
+                  {{ block.settings.title | escape }}</label>
+              </div>
+              <div class="J16--Content">
+                {{ block.settings.text }}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+      <div class="g-recaptcha" data-sitekey="6Ld83isnAAAAALb-T7N48HXnHWeFcoCrHy-AFPfb"></div>
+      <div class="row">
+        <input type="submit" class=" contact-form__submit btn" value="SUBMIT">
+      </div>
+    {% endform %}
+
+  </div>
+
+  {% if section.settings.use_columns %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Come join us",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "An email input is required for the form to work."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title",
+        "label": "Show page title",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "title_alignment",
+        "label": "Title alignment",
+        "default": "left",
+        "options": [
+          { "value": "left", "label": "Left" },
+          { "value": "center", "label": "Center" },
+          { "value": "right", "label": "Right" }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "use_columns",
+        "label": "Enable column layout for content and form",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "name_input",
+        "name": "Name input",
+        "limit": 1
+      },
+      {
+        "type": "email_input",
+        "name": "Email input",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "This block is required for the form to send."
+          }
+        ]
+      },
+      {
+        "type": "message_input",
+        "name": "Message input",
+        "limit": 1
+      },
+      {
+        "type": "phone_input",
+        "name": "Phone input",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "custom_input",
+        "name": "Custom input",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "default": "Custom input",
+            "info": "The custom input will not appear on the form without a label."
+          },
+          {
+            "type": "select",
+            "id": "type",
+            "label": "Type",
+            "default": "text",
+            "options": [
+              {
+                "label": "Text",
+                "value": "text"
+              },
+              {
+                "label": "Number",
+                "value": "number"
+              },
+              {
+                "label": "Text area",
+                "value": "textarea"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Text content</p>"
+          }
+        ]
+      },
+      {
+        "type": "file_input",
+        "name": "file input",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "default": "Custom file",
+            "info": "The custom input will not appear on the form without a label."
+          },
+          {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "ys_radio",
+        "name": "Yes/No radio",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "default": "Custom radio",
+            "info": "The custom input will not appear on the form without a label."
+          }
+        ]
+      },
+      {
+        "type": "gender_select",
+        "name": "gender select",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "default": "Gender",
+            "info": "The custom input will not appear on the form without a label."
+          },
+          {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": false
+          }
+        ]
+      },
+      {
+        "type": "one_radio",
+        "name": "One radio",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "default": "I decline to answer the question above"
+          }
+        ]
+      },
+      {
+        "type": "decline_to_answer_1",
+        "name": "Decline to Answer 1",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Radio Label",
+            "default": "I decline to answer the question above"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Text content</p>"
+          }
+        ]
+      },
+      {
+        "type": "decline_to_answer_2",
+        "name": "Decline to Answer 2",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Radio Label",
+            "default": "I decline to answer the question above"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Text content</p>"
+          }
+        ]
+      },
+      {
+        "type": "race_select",
+        "name": "Race select",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "default": "Race"
+          },
+          {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": true
+          }
+        ]
+      },
+      {
+        "type": "veteran_select",
+        "name": "Veteran select",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Label",
+            "default": "Veteran Status"
+          },
+          {
+            "type": "checkbox",
+            "id": "required",
+            "label": "Required",
+            "default": true
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Come join us"
+      }
+    ]
+  }
+{% endschema %}
+
+<script>
+  $(document).ready(function(){
+    $('#contact_dta_1, #contact_dta_2').click(function(){
+      var id = this.id;
+      if( $(this).data('checked') ) {
+          $(this).prop('checked', false);
+          $(this).data('checked', false);
+      } else {
+          $(this).data('checked', true);
+      }
+
+      $(this).parents('.J16--Decline2answer').children('.J16--Content').slideToggle(100);
+    })
+  });
+</script>

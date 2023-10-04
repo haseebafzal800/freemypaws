@@ -1,0 +1,415 @@
+<style>
+  .section-{{ section.id }} .pricing-title {
+    color: {{ section.settings.title_color }};
+  }
+  .section-{{ section.id }} .pricing-title span {
+    color: {{ section.settings.highlighted_color }};
+  }
+  .section-{{ section.id }} .pricing-content p {
+    color: {{ section.settings.paragraph_color }};
+  }
+  .section-{{ section.id }} .tbl_wrap {
+    background-color: {{ section.settings.tbl_bg }};
+    color: {{ section.settings.tbl_txt_color }};
+  }
+  .section-{{ section.id }} .tbl_wrap svg path {
+    fill: {{ section.settings.tbl_txt_color }};
+  }
+  span.highlight-title {
+    color: #388E3C!important;
+  }
+  .pricing_fetures {
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .section-{{ section.id }} div.pricing_btn a:hover {
+    transform: translate(-50%, 50%);
+  }
+</style>
+<div class="sec-pricing-table section-{{ section.id }}">
+  <div class="container d-flex">
+    <div class="pricing-content">
+      <h2 class="pricing-title">
+        {{ section.settings.title }}
+        <span class="highlight-title">
+          <em>{{ section.settings.highlight_title }}</em>
+        </span>
+      </h2>
+      <p>{{ section.settings.paragraph }}</p>
+    </div>
+    <div class="pricing-table d-flex">
+      {% if section.settings.enable_tbl1 %}
+      <div class="tbl_wrap">
+        {% if section.settings.pricing_title_size == "H4" %}
+          <h4>{{ section.settings.pricing_title }}</h4>
+        {% elsif section.settings.pricing_title_size == "H6" %}
+          <h6>{{ section.settings.pricing_title }}</h6>
+        {% endif %}
+        {{ section.settings.pricing_txt }}
+        <h2>{{ section.settings.price }}</h2>
+        <ul class="pricing_fetures">
+          {%- if section.settings.feature_1 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_1 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_2 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_2 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_3 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_3 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_4 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_4 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_5 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_5 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_6 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_6 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+        </ul>
+        <div class="pricing_btn">
+          <a class="btn btn--small btn--primary" href="{{ section.settings.btn_url }}">{{ section.settings.btn_txt }}</a>
+        </div>
+      </div>
+      {% endif %}
+      {% if section.settings.enable_tbl2 %}
+      <div class="tbl_wrap">
+        <h6>{{ section.settings.pricing_title_2 }}</h6>
+        {{ section.settings.pricing_txt_2 }}
+        <h2>{{ section.settings.price_2 }}</h2>
+        <ul class="pricing_fetures">
+          {%- if section.settings.feature_1_2 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_1_2 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_2_2 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_2_2 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_3_2 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_3_2 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_4_2 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_4_2 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_5_2 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_5_2 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+          {%- if section.settings.feature_6_2 != blank -%}
+          <li>
+            <div style="width: 20px; float: left;">
+              <img style="width: 19px;" src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/dog-breed-identification-dna-test-health-conditions-test-felicitails-brand-collaboration-embark-felicitails-is-founded-by-lindsay-giguiere-check-icon.svg?v=1686834101">
+            </div>
+            <div style="width: calc(100% - 20px); float: left;">
+              <p style="margin: 0;">{{ section.settings.feature_6_2 }}</p>
+            </div>
+          </li>
+          {%- endif -%}
+        </ul>
+        <div class="pricing_btn">
+          <a class="btn btn--small btn--primary" href="{{ section.settings.btn_url_2 }}">{{ section.settings.btn_txt_2 }}</a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Pricing Table Green",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Choose Your"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#000000"
+      },
+      {
+        "type": "text",
+        "id": "highlight_title",
+        "label": "Highlight Title",
+        "default": "Perfect Plan"
+      },
+      {
+        "type": "color",
+        "id": "highlighted_color",
+        "label": "Highlighted Color",
+        "default": "#f388ac"
+      },
+      {
+        "type": "richtext",
+        "id": "paragraph",
+        "label": "Paragraph"
+      },
+      {
+        "type": "color",
+        "id": "paragraph_color",
+        "label": "Paragraph Color",
+        "default": "#000"
+      },
+      {
+        "type": "header",
+        "content": "Pricing Table 1"
+      },
+      {
+        "id": "enable_tbl1",
+        "type": "checkbox",
+        "label": "Enable Pricing Table",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "pricing_title",
+        "label": "Title",
+        "default": "Starter"
+      },
+      {
+        "type": "select",
+        "id": "pricing_title_size",
+        "label": "Title Size",
+        "default": "H6",
+        "options": [
+          {
+            "label": "H4",
+            "value": "H4"
+          },
+          {
+            "label": "H6",
+            "value": "H6"
+          }
+        ]
+      },
+      {
+        "type": "richtext",
+        "id": "pricing_txt",
+        "label": "Paragraph"
+      },
+      {
+        "type": "text",
+        "id": "price",
+        "label": "Price",
+        "default": "$150"
+      },
+      {
+        "type": "text",
+        "id": "feature_1",
+        "label": "Feature 1",
+        "default": "20 Workouts"
+      },
+      {
+        "type": "text",
+        "id": "feature_2",
+        "label": "Feature 2",
+        "default": "Meal Plans in Mobile"
+      },
+      {
+        "type": "text",
+        "id": "feature_3",
+        "label": "Feature 3",
+        "default": "One Men Coaching"
+      },
+      {
+        "type": "text",
+        "id": "feature_4",
+        "label": "Feature 4",
+        "default": "50% Group Coaching"
+      },
+      {
+        "type": "text",
+        "id": "feature_5",
+        "label": "Feature 5",
+        "default": "24/7 Customer Support"
+      },
+      {
+        "type": "text",
+        "id": "feature_6",
+        "label": "Feature 6",
+        "default": "24/7 Customer Support"
+      },
+      {
+        "type": "text",
+        "id": "btn_txt",
+        "label": "Button Text",
+        "default": "Get an Appointment"
+      },
+      {
+        "type": "url",
+        "id": "btn_url",
+        "label": "Button link"
+      },
+      {
+        "type": "header",
+        "content": "Pricing Table 2"
+      },
+      {
+        "id": "enable_tbl2",
+        "type": "checkbox",
+        "label": "Enable Pricing Table",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "pricing_title_2",
+        "label": "Title",
+        "default": "Starter"
+      },
+      {
+        "type": "richtext",
+        "id": "pricing_txt_2",
+        "label": "Paragraph"
+      },
+      {
+        "type": "text",
+        "id": "price_2",
+        "label": "Price",
+        "default": "$150"
+      },
+      {
+        "type": "text",
+        "id": "feature_1_2",
+        "label": "Feature 1",
+        "default": "20 Workouts"
+      },
+      {
+        "type": "text",
+        "id": "feature_2_2",
+        "label": "Feature 2",
+        "default": "Meal Plans in Mobile"
+      },
+      {
+        "type": "text",
+        "id": "feature_3_2",
+        "label": "Feature 3",
+        "default": "One Men Coaching"
+      },
+      {
+        "type": "text",
+        "id": "feature_4_2",
+        "label": "Feature 4",
+        "default": "50% Group Coaching"
+      },
+      {
+        "type": "text",
+        "id": "feature_5_2",
+        "label": "Feature 5",
+        "default": "24/7 Customer Support"
+      },
+      {
+        "type": "text",
+        "id": "feature_6_2",
+        "label": "Feature 6",
+        "default": "24/7 Customer Support"
+      },
+      {
+        "type": "text",
+        "id": "btn_txt_2",
+        "label": "Button Text",
+        "default": "Get an Appointment"
+      },
+      {
+        "type": "url",
+        "id": "btn_url_2",
+        "label": "Button link"
+      },
+      {
+        "type": "color",
+        "id": "tbl_bg",
+        "label": "Table Background",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "tbl_txt_color",
+        "label": "Table Text Color",
+        "default": "#fff"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Pricing Table green"
+      }
+    ]
+  }
+{% endschema %}

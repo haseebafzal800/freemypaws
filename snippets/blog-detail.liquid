@@ -1,0 +1,166 @@
+<div class="iq-blog-header">
+  <h1>{{ article.title }}</h1>
+  <div class="display-flex">
+    {% if show_author %}
+      <p>
+        <span>Written By:</span>
+        {{ article.author }}
+      </p>
+    {% endif %}
+    {% if article.metafields.custom.editor_name.value and show_editor %}
+      <p>
+        <span>Editor:</span>
+        {{ article.metafields.custom.editor_name.value }}
+      </p>
+    {% endif %}
+  </div>
+  <div class="display-flex between">
+    <a href="{{ blog.url }}" class="btn btn-primary">
+      {{ blog.title }}
+    </a>
+    <button type="button" class="btn btn-primary btn-color">Fact checked
+      <div class="checkbox-icon">
+        {% render 'svg-checkbox' %}
+      </div>
+    </button>
+  </div>
+  {% if show_article_img %}
+    <div class="img-holder">
+      <img src="{{ article.image | img_url: '1024x1024' }}" alt="{{ article.image.alt | escape }}">
+    </div>
+  {% endif %}
+</div>
+{% if show_listen_audio %}
+  <div class="article-voice">
+    <div class="pause-play">
+      <div class="pause-icon">
+        <img src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-founded-by-lindsay-giguiere-play-icon.svg?v=1689103752" alt="pause-icon">
+      </div>
+      <strong>Listen to this Article</strong>
+    </div>
+    {% render 'svg-speaker' %}
+  </div>
+{% endif %}
+
+{% if article.content %}
+  <div class="article-detail em-article">
+    {{ article.content }}
+  </div>
+{% endif %}
+{% if show_article_module %}
+   <div class="three-col-wrapper">
+      <div class="single-mod-wrapper">
+        <div class="content-container">
+        <div class="img-wrapper">
+          <img src="{{ col_image_1 | img_url: '720x' }}" alt="image" />
+        </div> 
+          <ul class="col_list">
+            <li><strong class="col_heading">Services</strong></li>
+            {% for link in linklists.services.links %} 
+                <li class="{% if forloop.last %}last-col{% endif %}">
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li> 
+            {% endfor %}
+          </ul>
+        </div>
+      </div>  
+
+     <div class="single-mod-wrapper">
+        <div class="img-wrapper">
+          <img src="{{ col_image_2 | img_url: '720x' }}" alt="image" />
+        </div> 
+        
+          <ul class="col_list">
+            <li><strong class="col_heading">Supplies</strong></li>
+            {% for link in linklists.supplies.links %} 
+                <li class="{% if forloop.last %}last-col{% endif %}">
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li> 
+            {% endfor %}
+          </ul>
+      </div>  
+
+
+     <div class="single-mod-wrapper">
+        <div class="img-wrapper">
+          <img src="{{ col_image_3 | img_url: '720x' }}" alt="image" />
+        </div> 
+        
+          <ul class="col_list">
+            <li><strong class="col_heading">Blogs</strong></li>
+            {% for link in linklists.b-blogs.links %} 
+                <li class="{% if forloop.last %}last-col{% endif %}">
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li> 
+            {% endfor %}
+          </ul>
+      </div> 
+   </div>  
+{% endif %}  
+
+{% if article.metafields.custom.author_tagline.value and one_line_text %}
+  <div class="one_line_text"><p>{{ article.metafields.custom.author_tagline.value }}</p></div>  
+{% endif %}
+
+{% if article.metafields.custom.author_signature %}
+  <div class="lindsay-signature imgDiv">
+    <img src="{{ article.metafields.custom.author_signature.value | img_url: 'large' }}" alt="lindsay-signature">
+  </div>
+{% endif %}
+
+
+
+{% assign articleHandle = article.handle | split: "/" | first %}
+
+<div class="tag-cloud">
+  <h2 class="tag-heading">Tag Cloud</h2>
+  <ul class="blog-stories-tags">
+    {% for tag in blogs[articleHandle].all_tags %}
+      {% assign count = 0 %}
+      {% for article in blogs[blog.handle].articles %}
+        {% if article.tags contains tag %}
+          {% capture count %}
+            {{ count | plus: 1 }}{% endcapture %}
+        {% endif %}
+      {% endfor %}
+      {% assign count = count | plus: 0 %} 
+      <li
+        class="tag-{% if count <= 1 %}alpha
+          {% elsif count >= 2 and count < 5 %}beta
+          {% elsif count >= 6 and count < 10 %}gamma
+          {% elsif count >= 11 %}delta
+        {% endif %}">
+        <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>  
+
+<div class="disqus-wrapper">
+  {% render "disqus" %}
+</div>
+
+{% if show_pagination %}
+  {% if blog.previous_article or blog.next_article %}
+    <div class="iq-links-section">
+      {% if blog.previous_article %}
+        <a class="box" href="{{ blog.previous_article }}">
+          <div class="left-icon">
+            <img src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-blog-mood-board-created-by-lindsay-giguiere-back-icon.png?v=1689083201" alt="chevron-left">
+          </div>
+          <strong>{{ blog.previous_article.title }}</strong>
+        </a>
+      {% endif %}
+      {% if blog.next_article %}
+        <a
+          class="box"
+          href="{{ blog.next_article }}">
+          <strong>{{ blog.next_article.title }}</strong>
+          <div class="right-icon">
+            <img src="https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-blog-mood-board-created-by-lindsay-giguiere-forward-icon.png?v=1689083831" alt="chevron-right">
+          </div>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endif %}

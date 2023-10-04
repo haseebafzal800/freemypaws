@@ -1,0 +1,180 @@
+<script type="text/javascript">
+  function modalShow() {
+  document.body.classList.add("lowerindex");
+      document.body.classList.add('overflowhidden')
+        var modal = document.getElementsByClassName("modal-container")[0];
+        modal.style.display = "flex"
+      };
+      function modalClose() {
+        document.body.classList.remove('lowerindex')
+      document.body.classList.remove('overflowhidden')
+        var modal = document.getElementsByClassName("modal-container")[0];
+        modal.style.display = 'none'
+      };
+      window.onclick = function(event) {
+        var modal_container = document.getElementsByClassName("modal-container")[0];
+        if (event.target == modal_container) {
+      document.body.classList.remove('overflowhidden')
+          document.body.classList.remove('lowerindex')
+          modal_container.style.display = "none";
+        }
+      }</script>
+{% assign close_modal = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+ </svg>
+ ' %}
+{% assign alt_text = 'felicitails account center, emotional support animal certification, psychiatric service animal certification,  dog and cat training, pet insurance, dog walking, pet sitting, dog boarding, dog dna testing, curated supplies and products, felicitails and free my paws founder lindsay giguiere ' %}
+
+{% assign img_account_center_subscriptions = 'https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-account-center-subscriptions-ordered-founded-by-lindsay-giguiere-overlay.png?v=1685640384' %}
+{% assign alt_account_center_subscriptions = 'felicitails-account-center-subscriptions-ordered-founded-by-lindsay-giguiere-overlay' %}
+
+<div class="account-main-body">
+  <div class="account-main-items">
+    <div class="account-main-digitalvault">
+      <div class="account-main-item-title">
+        <h1>Subscriptions</h1>
+      </div>
+      <div class="account-main-item-image">
+        <img src="{{ img_account_center_subscriptions }}" alt="{{ alt_account_center_subscriptions }}">
+      </div>
+    </div>
+    <div class="account-subscriptions-body width-fill">
+      <div class="content width-fill">
+        <div class="account-cards width-fill">
+          <div class="account-card add">
+            <div class="add-address">
+              <span class="add">+</span>
+              <h4 class="text">Add item</h4>
+            </div>
+          </div>
+          <div class="account-card">
+            <div class="width-fill height-fill card-content">
+              <div class="card-header">
+                <img src="./asset/product1.jpg" alt="{{ alt_text }}">
+              </div>
+              <div class="card-body">
+                <div class="header">Product Name</div>
+                <div class="body">
+                  <p>$50</p>
+                  <p>1 unit every 1 month</p>
+                  <p>May 28</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p class="width-fill">
+                  <a onclick="modalShow();">Edit</a>
+                  |
+                  <a>Cancel</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="account-card">
+            <div class="width-fill height-fill card-content">
+              <div class="card-header">
+                <img src="./asset/product2.jpg" alt="{{ alt_text }}">
+              </div>
+              <div class="card-body">
+                <div class="header">Product Name</div>
+                <div class="body">
+                  <p>$50</p>
+                  <p>1 unit every 1 month</p>
+                  <p>May 28</p>
+                </div>
+              </div>
+              <div class="width-fill card-footer">
+                <p class="width-fill">
+                  <a>Edit</a>
+                  |
+                  <a>Cancel</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-container" style="display:none">
+  <div class="modal">
+    <div class="modal-header">
+      <h4>CHANGE SCHEDULE</h4>
+      <div onclick="modalClose();">
+
+        {{ close_modal }}
+      </div>
+    </div>
+    <div class="line-w"></div>
+    <div class="modal-body">
+      <div class="product">
+        <img src="product1" alt="{{ alt_text }}">
+        <div>
+          <p>Product Name</p>
+          <p>$50</p>
+        </div>
+      </div>
+      <div>
+        <div class="information-group">
+          <div class="width-fill item-other font-default">
+            <label for="info-quantity" class="width-fill info-label">Quantity</label>
+            <div class="width-fill select info-input">
+              <select
+                name="quantity"
+                id="info-quantity"
+                class="width-fill">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="width-fill item-other font-default">
+            <label for="info-delivered" class="width-fill info-label">Delivered every</label>
+            <div class="width-fill select info-input">
+              <select
+                name="delivered"
+                id="info-delivered"
+                class="width-fill">
+                <option value="1">1month</option>
+                <option value="2">2month</option>
+                <option value="3">3month</option>
+              </select>
+            </div>
+          </div>
+          <div class="width-fill item-other font-default">
+            <label for="info-nextdelivery" class="width-fill info-label">Next delivery by</label>
+            <div class="width-fill select info-input">
+              <select
+                name="nextdelivery"
+                id="info-nextdelivery"
+                class="width-fill">
+                <option value="1">May28</option>
+                <option value="2">Jun28</option>
+                <option value="3">Jul28</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>This may cnahge discounts on upcoming deliveries</p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="modal-buttons">
+        <button class="no">Cancel</button>
+        <button class="yes">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>

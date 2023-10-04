@@ -1,0 +1,803 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "title_alignment": "center"
+      }
+    },
+    "3d23a955-939e-4ddf-926b-150b7474e1d0": {
+      "type": "background-video",
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/fd276b6c2fea45fca742e3488275735d.mp4",
+        "cover_image": "shopify:\/\/shop_images\/woman-walking-with-master-trainer-toriano-sanzone-trained-service-animals-through-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere.jpg",
+        "image_position": "center center",
+        "video_overlay_bg": "",
+        "video_overlay_opacity": 0,
+        "height_desktop": 600,
+        "height_mobile": 620,
+        "color_overlay_bg": "rgba(0,0,0,0)",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#ffffff",
+        "overlay_title": "WELCOME TO OUR FREE MY PAWS DOG TRAINING ACADEMY!",
+        "overlay_text": "We’re thrilled you’re considering the benefits of working with Torian Sanzone, our Master Trainer on your dog or cat training needs. Our Free My Paws Certified Training Academy is geared towards Obedience, Socialization, Agility, Behavior Management and Problem Solving Techniques training. We understand that having your furry companion by your side opens up so many opportunities but without keen training you simply cannot enjoy them safely.",
+        "over_lay_blank_1": true,
+        "over_lay_blank_2": true,
+        "overlay_url_text_1": "START YOUR TRAINING ONLINE TODAY",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "mobile_text_below": false,
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50,
+        "custom_class": "hero-video"
+      }
+    },
+    "f2216ce5-ca43-4843-90a3-3f4ab3b995c7": {
+      "type": "rich-text",
+      "custom_css": [
+        ".rich-text-section {overflow: visible;}",
+        ".container {margin-top: -100px;}",
+        ".rich-text-section {box-shadow: 0 2px 20px 2px #0005;}",
+        "h2 {text-transform: capitalize; font-weight: 400;}",
+        ".reading-width {max-width: 100%; padding: 0;}",
+        ".reading-width h2 {font-size: 26px; margin: 15px 0;}",
+        "p {font-size: 26px; line-height: 34px;}",
+        ".large-section {padding-bottom: 40px; padding-top: 40px;}"
+      ],
+      "settings": {
+        "title": "",
+        "title_size": "H2",
+        "sub_title": "",
+        "text": "<p>Whether you're a new puppy owner looking to instill good habits, or struggling to manage your pet’s anxious, impulsive or even aggressive antics, we're here to help you unlock the joy of living with a confident, well-mannered canine companion.<\/p><p>From basic obedience to more complex service dog tasks, our Free My Paws Training Academy, led by world-renowned canine behaviorist and master trainer Toriano Sanzone, will help you develop the skills that you and your pet need.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#ffffff",
+        "color_bg": "#636363",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image": "shopify:\/\/shop_images\/freem-my-paws-psychiatric-service-animal-emotional-support-animal-therapist-telehealth-housing-letter-travel-letter.png",
+        "image_url": "",
+        "custom_class": "hero-sec-text free-mypaw-icon rt-one"
+      }
+    },
+    "fda4debc-57e4-4a6e-b777-2678933eb2a4": {
+      "type": "rich-text",
+      "settings": {
+        "title": "WE HAVE YOUR DOG TRAINING & BEHAVIOR SOLUTION",
+        "title_size": "H2",
+        "sub_title": "",
+        "text": "<h6>Learn how renowned canine behaviorist and master trainer, Toriano Sanzone has created the Free My Paws certification Training Academy. We can assist you, regardless of your dog's current level of training, to have the confident, well-mannered furry companion you deserve.<\/h6>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "image_url_top": "",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "78cf94df-fb46-41df-901c-5c3be1bf9b66": {
+      "type": "image-gallery",
+      "blocks": {
+        "template--19857819992365__78cf94df-fb46-41df-901c-5c3be1bf9b66-1688845841a116c42d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-my-paws-training-academy-through-felicitails-dog-trainer-teaching-dog-run-though-obstacles-felicitails-founded-by-lindsay-giguiere.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "link": "",
+            "title": "",
+            "text": "<h3>3RD GENERATION MASTER TRAINER GUIDING YOUR TRAINING FOR VERIFIABLE RESULTS<\/h3>",
+            "button_label": "",
+            "overlay_position": "center-center"
+          }
+        },
+        "template--19857819992365__78cf94df-fb46-41df-901c-5c3be1bf9b66-1688845841a116c42d-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-my-paws-training-academy-through-felicitails-dog-trainer-with-two-dogs-felicitails-founded-by-lindsay-giguiere.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "link": "",
+            "title": "",
+            "text": "<h3>EVERYTHING FOR CONTROL OF YOUR ANIMAL FROM GENERAL OBEDIENCE TO ADVANCE SERVICE ANIMAL TRAINING<\/h3>",
+            "button_label": "",
+            "overlay_position": "center-center"
+          }
+        },
+        "template--19857819992365__78cf94df-fb46-41df-901c-5c3be1bf9b66-1688845841a116c42d-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-my-paws-training-academy-through-felicitails-dog-trainer-teaching-dog-steady-walk-felicitails-founded-by-lindsay-giguiere.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "link": "",
+            "title": "",
+            "text": "<h3>CERTIFIES YOUR DOG FOR THE AKC SERVICE ANIMAL CANINE GOOD CITIZEN \/ PUBLIC ACCESS TESTS<\/h3>",
+            "button_label": "",
+            "overlay_position": "center-center"
+          }
+        }
+      },
+      "block_order": [
+        "template--19857819992365__78cf94df-fb46-41df-901c-5c3be1bf9b66-1688845841a116c42d-0",
+        "template--19857819992365__78cf94df-fb46-41df-901c-5c3be1bf9b66-1688845841a116c42d-1",
+        "template--19857819992365__78cf94df-fb46-41df-901c-5c3be1bf9b66-1688845841a116c42d-2"
+      ],
+      "custom_css": [
+        ".container {padding: 0;}",
+        ".gallery {border-radius: 0;}"
+      ],
+      "settings": {
+        "grid": 3,
+        "image_height": 300,
+        "image_height_mobile": 300,
+        "enable_margin": false,
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "color_overlay_bg": "#000000",
+        "overlay_opacity": 30,
+        "color_overlay_text": "#ffffff",
+        "overlay_url_style": "button_1",
+        "custom_class": "img-boxes ig-one"
+      }
+    },
+    "0787e037-20b8-4ab5-831b-719add3a99cc": {
+      "type": "faq-image",
+      "blocks": {
+        "38daa154-dc5b-4a51-abf9-80ec4a6a1cd5": {
+          "type": "faq",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-1.png",
+            "title": "Do you experience stress and frustration during your dog walks?",
+            "desc": "",
+            "content": "<p>Walking your dog should be an enjoyable experience for both you and your furry companion. Our training focuses on teaching dogs proper leash manners and obedience, ensuring that walks become stress-free and enjoyable.<\/p>"
+          }
+        },
+        "f0068723-f149-43cc-8b5a-93a9e82ca730": {
+          "type": "faq",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-2.png",
+            "title": "Do you struggle with your dog's behavior when guests are present, leading to embarrassment?",
+            "desc": "",
+            "content": "<p>Welcoming guests should be a pleasant experience without the added worry of managing your dog's behavior. Our training includes techniques to address issues such as jumping, excessive barking, and boundary control, allowing your dog to greet guests politely and eliminating any embarrassment.<\/p>"
+          }
+        },
+        "d9326362-7e98-47bb-a58b-7b275f8dd0b7": {
+          "type": "faq",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-3.png",
+            "title": "Does your dog exhibit nervousness, excessive barking, or urination when encountering strangers?",
+            "desc": "",
+            "content": "<p>Socializing your dog is crucial for their overall well-being. Our training incorporates socialization techniques to help your dog feel more comfortable and confident around strangers, reducing nervousness, barking, and inappropriate peeing.<\/p>"
+          }
+        },
+        "8b4a27a6-fa0e-4792-8733-2a4097c56e4c": {
+          "type": "faq",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-4.png",
+            "title": "Is your dog displaying aggressive behaviors that concern you?",
+            "desc": "",
+            "content": "<p>Dealing with aggression can be challenging and potentially dangerous. Our training includes strategies to manage aggression, ensuring that your dog and others stay safe. We focus on teaching your dog appropriate behavior and providing you with the tools to address and redirect aggressive tendencies.<\/p>"
+          }
+        },
+        "33310b52-6ccd-4bb3-b129-3b3c4f07fdd7": {
+          "type": "faq",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-5.png",
+            "title": "Does your dog act impulsively and unpredictably, causing concern?",
+            "desc": "",
+            "content": "<p>Consistency and impulse control are vital for a well-behaved dog. Our training emphasizes impulse control exercises to help your dog make better choices and exhibit more predictable behavior at home and in public, leading to a harmonious relationship.<\/p>"
+          }
+        },
+        "d5ae1843-ea4e-49d9-8cb7-a9561cea1b70": {
+          "type": "faq",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-6.png",
+            "title": "Do you worry that your dog's behavior may become a liability?",
+            "desc": "",
+            "content": "<p>As responsible dog owners, it's natural to be concerned about liability. Our comprehensive training not only focuses on obedience and behavior management but also emphasizes responsible ownership. By teaching your dog appropriate behaviors and providing guidance on responsible dog handling, we aim to alleviate any potential liability concerns.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "38daa154-dc5b-4a51-abf9-80ec4a6a1cd5",
+        "f0068723-f149-43cc-8b5a-93a9e82ca730",
+        "d9326362-7e98-47bb-a58b-7b275f8dd0b7",
+        "8b4a27a6-fa0e-4792-8733-2a4097c56e4c",
+        "33310b52-6ccd-4bb3-b129-3b3c4f07fdd7",
+        "d5ae1843-ea4e-49d9-8cb7-a9561cea1b70"
+      ],
+      "settings": {
+        "title": "ASK YOURSELF THE FOLLOWING",
+        "title_color": "#000000"
+      }
+    },
+    "d638a4b6-88e2-4340-9dd7-2154c8d63c96": {
+      "type": "image-with-text",
+      "settings": {
+        "max_page_width": 1000,
+        "image_title_top": "THEN LET TORIANO GIVE YOU THE ANSWER",
+        "title_top_margin_bottom_d": 40,
+        "title_top_margin_bottom_m": 20,
+        "image_title_top_size": "H2",
+        "image": "shopify:\/\/shop_images\/master-trainer-toriano-sanzone-training-through-felicitails-training-courses-felicitails-founded-by-lindsay-giguiere.jpg",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "right",
+        "paw_padding": true,
+        "subtitle": "",
+        "title": "Our Master Trainer, Toriano Sanzone, is a highly respected figure in the field of dog training with over two decades of experience.",
+        "link_text": "",
+        "link_link_text": "",
+        "link_link_link": "",
+        "text": "<p>Coming from a family of dog trainers, Toriano developed a passion for training early on. His approach emphasizes positive reinforcement and has been successful in training therapy dogs, hunting dogs, security dogs, as well as rehabilitating problematic dogs to enable them to thrive within loving families.<br\/><br\/>Toriano's extensive professional background includes founding the Sanzone School of Dog Training\/Wolfkeeper University in 2002, where he authored the acclaimed book \"Dog Training w\/ Love.\"<br\/><br\/>In 2013, he had the privilege of training under Cesar Milan at the renowned Dog Psychology Center in Santa Clarita, CA.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "bold_sub_title": false,
+        "text_alignment": "center",
+        "subtitle_color": "",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "custom_class": "",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    },
+    "53e89b32-6c2e-4880-8204-f9b19ef4cbcb": {
+      "type": "image-with-text",
+      "settings": {
+        "max_page_width": 1000,
+        "image_title_top": "",
+        "title_top_margin_bottom_d": 40,
+        "title_top_margin_bottom_m": 20,
+        "image_title_top_size": "H1",
+        "image": "shopify:\/\/shop_images\/master-trainer-toriano-sanzone-training-academy-results-through-felicitails-training-courses-felicitails-founded-by-lindsay-giguiere.jpg",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "left",
+        "paw_padding": true,
+        "subtitle": "",
+        "title": "",
+        "link_text": "",
+        "link_link_text": "",
+        "link_link_link": "",
+        "text": "<p>Toriano's expertise extends internationally, as he has conducted private lessons and group classes in cities such as Berlin, Mallorca, and Zurich. He is also a seasoned broadcaster and public speaker, having appeared on over 200 episodes of \"The Wolfkeeper Show\" podcast.<br\/><br\/>Currently, Toriano leads the Free My Paws trainer's team, sharing his vast knowledge and creating innovative training videos for PSA owners. His ultimate goal is to help clients establish bonds of love and respect with their animals, which he considers one of life's most fulfilling achievements.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "bold_sub_title": false,
+        "text_alignment": "center",
+        "subtitle_color": "",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "custom_class": "iwt-two",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    },
+    "98ec6880-102d-4317-8e68-8684cf3306e5": {
+      "type": "rich-text-custom",
+      "settings": {
+        "title": "",
+        "title_size": "H2",
+        "sub_title": "",
+        "text": "<h3>\"Helping our clients make the bonds of love and respect with their animals is truly one of the most blessed accomplishments one can make in life.\"<\/h3>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_sub_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "#faf2f2",
+        "gradient_bg": "",
+        "image_top": "shopify:\/\/shop_images\/felicitails-free-my-paws-training-academy-toriano-sanzone-master-trainer-profile-picture.png",
+        "image_url_top": "",
+        "image": "shopify:\/\/shop_images\/felicitails-free-my-paws-training-academy-toriano-sanzone-master-trainer-signature.png",
+        "image_url": "",
+        "custom_class": ""
+      }
+    },
+    "29ce7244-a3bc-4e7d-a53f-c4a84a198470": {
+      "type": "custom-video",
+      "settings": {
+        "image_title_top": "FROM OUR TRAINING PROGRAM MASTER TRAINER",
+        "max_page_width": 1018,
+        "select": "MP4",
+        "vid": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f3963a5fe6d3471cb51024580058f52f.mp4",
+        "poster": "shopify:\/\/shop_images\/french-bulldog-master-trainer-toriano-sanzone-training-heeling-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere-cover.jpg",
+        "check": false,
+        "i_vid": "",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "url_style_bottom": "link_style",
+        "custom_class": ""
+      }
+    },
+    "07ac8262-fda4-432a-8823-e7a89cb41def": {
+      "type": "timeline-icon-left",
+      "blocks": {
+        "aa684811-7606-4f06-a2d4-3762e88c2ff5": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "Our proprietary dog training system, backed by a remarkable reputation, is renowned as one of the finest in the world.",
+            "timeline_icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-7.png",
+            "button_title": "",
+            "button_title_size": "H4"
+          }
+        },
+        "dd7b0598-ed82-4e62-83df-c8496c0c85ec": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "Our extensive collection of reviews, testimonials, and an impressive track record of satisfied clients attests to its effectiveness.",
+            "timeline_icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-8.png",
+            "button_title": "",
+            "button_title_size": "H4"
+          }
+        },
+        "aec01f9e-120d-4e58-b174-fe5d2f0564ec": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "Developed over two decades of in-field experience, our training system encompasses various essential aspects, including obedience training, socialization, agility, behavior management, and problem-solving techniques. ",
+            "timeline_icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-9.png",
+            "button_title": "",
+            "button_title_size": "H4"
+          }
+        },
+        "c3f50cd8-ec0e-40b2-bd93-a1e1c163fe6d": {
+          "type": "timeline",
+          "settings": {
+            "timeline_text": "Whatever challenges you may be facing with your dog, rest assured that our training method is specifically designed to address and resolve them, providing guaranteed results. With our comprehensive approach, you can trust us to deliver the necessary solutions to enhance the relationship between you and your beloved canine companion.",
+            "timeline_icon": "shopify:\/\/shop_images\/free-my-paws-training-academy-by-toriano-snazone-master-trainer-felicitails-founded-by-lindsay-giguiere-icon-10.png",
+            "button_title": "",
+            "button_title_size": "H4"
+          }
+        }
+      },
+      "block_order": [
+        "aa684811-7606-4f06-a2d4-3762e88c2ff5",
+        "dd7b0598-ed82-4e62-83df-c8496c0c85ec",
+        "aec01f9e-120d-4e58-b174-fe5d2f0564ec",
+        "c3f50cd8-ec0e-40b2-bd93-a1e1c163fe6d"
+      ],
+      "custom_css": [
+        ".sec-timeline .timeline-icon img {width: 60px; height: 60px; max-width: none;}"
+      ],
+      "settings": {
+        "title": "THE FREE MY PAWS PROPRIETARY TRAINING PROGRAM"
+      }
+    },
+    "a9951a60-b878-4ff1-8bcf-0a32d19c5b3d": {
+      "type": "custom-video",
+      "settings": {
+        "image_title_top": "WATCH TORIANO IN ACTION",
+        "max_page_width": 1018,
+        "select": "MP4",
+        "vid": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/32c051cb3fbb433d9435df155e617ad4.mp4",
+        "poster": "shopify:\/\/shop_images\/french-bulldog-master-trainer-toriano-sanzone-training-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere-cover.jpg",
+        "check": false,
+        "i_vid": "",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "url_style_bottom": "link_style",
+        "custom_class": ""
+      }
+    },
+    "d2daa2a4-7fb7-485d-8ee7-ac318fa177eb": {
+      "type": "slideshow-custom",
+      "blocks": {
+        "template--19857819992365__d2daa2a4-7fb7-485d-8ee7-ac318fa177eb-16888925192a3d6a53-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/guide-dog-labrador-retriever-master-trainer-toriano-sanzone-training-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "",
+            "enlarge_title": false,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "template--19857819992365__d2daa2a4-7fb7-485d-8ee7-ac318fa177eb-16888925192a3d6a53-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beautiful-border-collie-dog-master-trainer-toriano-sanzone-training-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "",
+            "enlarge_title": false,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "6a745870-29f1-4d09-ab50-fd50192f68fa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/two-stylish-girls-sunny-field-with-dogs-master-trainer-toriano-sanzone-training-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "",
+            "enlarge_title": false,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "cdad5b6b-c867-4711-b4b0-a8064be32313": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/white-border-collie-master-trainer-toriano-sanzone-training-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "",
+            "enlarge_title": false,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "357ecd35-6ac4-491b-91ae-20dc7d9c3763": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-training-french-bulldog-master-trainer-toriano-sanzone-training-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "",
+            "enlarge_title": false,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "0faed3cc-e456-46e0-a3ab-829417c30249": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-walking-with-her-dog-master-trainer-toriano-sanzone-training-results-with-free-my-paws-training-acacademy-felicitails-founded-by-lindsay-giguiere.jpg",
+            "image_position": "center center",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 80,
+            "color_overlay_text": "#333333",
+            "text_alignment": "center",
+            "overlay_position_x": 50,
+            "overlay_position_y": 80,
+            "overlay_title": "",
+            "enlarge_title": false,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--19857819992365__d2daa2a4-7fb7-485d-8ee7-ac318fa177eb-16888925192a3d6a53-0",
+        "template--19857819992365__d2daa2a4-7fb7-485d-8ee7-ac318fa177eb-16888925192a3d6a53-1",
+        "6a745870-29f1-4d09-ab50-fd50192f68fa",
+        "cdad5b6b-c867-4711-b4b0-a8064be32313",
+        "357ecd35-6ac4-491b-91ae-20dc7d9c3763",
+        "0faed3cc-e456-46e0-a3ab-829417c30249"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 560,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slide_transition": "fade",
+        "slideshow_autoplay": false,
+        "slideshow_autoplay_speed": 6,
+        "custom_class": "ssc-one"
+      }
+    },
+    "dfe15905-964f-4464-81b8-f6fd817d6e01": {
+      "type": "image-with-text",
+      "settings": {
+        "max_page_width": 1030,
+        "image_title_top": "HOW DOES OUR TRAINING AND THE CERTIFICATION PROCESS WORK?",
+        "title_top_margin_bottom_d": 40,
+        "title_top_margin_bottom_m": 20,
+        "image_title_top_size": "H1",
+        "image": "shopify:\/\/shop_images\/psychiatric-service-animal-certified-therapist-free-my-paws-program-secure-storage-of-therapist-housing-letter-travel-letter-felicitails-founded-by-lindsay-giguiere-training-academy-c.png",
+        "image_link": "",
+        "image_size": "30",
+        "image_position": "right",
+        "paw_padding": true,
+        "subtitle": "",
+        "title": "",
+        "link_text": "",
+        "link_link_text": "",
+        "link_link_link": "",
+        "text": "<p>Many dog owners, as well as aspiring service animal owners, are seeking the benefits of a properly trained dog but do not know where to start as often the information you find online can be confusing. In reality it is not all that complex. <br\/><br\/>At the heart of our program we work together to prepare your dog to pass the <a href=\"https:\/\/www.akc.org\/products-services\/training-programs\/canine-good-citizen\/canine-good-citizen-test-items\/\" title=\"https:\/\/www.akc.org\/products-services\/training-programs\/canine-good-citizen\/canine-good-citizen-test-items\/\">Canine Good Citizenship \/ Public Access Test<\/a>. By doing so the sky's the limits with what you can do with your pup, sport, show, service, the opportunities are endless as with a well-trained fury companion you can elevate together.<br\/><br\/>Once we have established the baseline in obedience, we step you through comprehensive courses to accomplish advanced socialization, agility, behavior management, and problem-solving skills in your dog. At each step of the process you as the handler and your dog earn a new level of certification, culminating in a final Free My Paws Training Academy Certification, we like to call it stepping our animals through grade-school, middle-school, high-school, college, masters, doctorate levels of training. <br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "bold_sub_title": false,
+        "text_alignment": "center",
+        "subtitle_color": "",
+        "color_text": "#333333",
+        "color_bg": "rgba(0,0,0,0)",
+        "gradient_bg": "",
+        "custom_class": "iwt-three",
+        "button_label_bottom": "",
+        "button_link_bottom": "",
+        "button_blank_bottom": true,
+        "url_style_bottom": "link_style"
+      }
+    },
+    "faf5c0a2-ee95-4780-9634-7eca95031ec8": {
+      "type": "pricing-table-alex",
+      "custom_css": [
+        "h2.pricing-title {font-size: 26px !important;}"
+      ],
+      "settings": {
+        "title": "BOOK YOUR ZOOM EVALUATION!",
+        "title_color": "#000000",
+        "highlight_title": "LET’S EXPLORE THE BEST TRAINING PROGRAM FOR YOU",
+        "highlighted_color": "#f388ac",
+        "paragraph": "<p>You and Toriano’s Director of Training will assess your needs and create a detailed Training Plan for proven results.<\/p>",
+        "paragraph_color": "#000000",
+        "enable_tbl1": true,
+        "pricing_title": "HOUR-LONG EVALUATION",
+        "pricing_title_size": "H4",
+        "pricing_txt": "<p>ZOOM Based Tele-evaluation<br\/>To include You & Your Animal<\/p>",
+        "price": "$99.97",
+        "feature_1": "Detailed Analysis",
+        "feature_2": "Mapping for Proven Results",
+        "feature_3": "Convenient Online Video Training Sessions, Review & Confirmation",
+        "feature_4": "Professional Master Dog Trainer",
+        "feature_5": "All Stages & Types Can be Trained",
+        "feature_6": "24\/7 Customer Support",
+        "btn_txt": "book NOW",
+        "btn_url": "",
+        "enable_tbl2": false,
+        "pricing_title_2": "",
+        "pricing_txt_2": "",
+        "price_2": "",
+        "feature_1_2": "",
+        "feature_2_2": "",
+        "feature_3_2": "",
+        "feature_4_2": "",
+        "feature_5_2": "",
+        "feature_6_2": "",
+        "btn_txt_2": "",
+        "btn_url_2": "",
+        "tbl_bg": "#faf2f2",
+        "tbl_txt_color": "#000000"
+      }
+    },
+    "1688887697b71f9b87": {
+      "type": "apps",
+      "blocks": {
+        "466a4328-4fab-4de8-b4a1-10d7e9434b96": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 5,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "466a4328-4fab-4de8-b4a1-10d7e9434b96"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3d23a955-939e-4ddf-926b-150b7474e1d0",
+    "f2216ce5-ca43-4843-90a3-3f4ab3b995c7",
+    "fda4debc-57e4-4a6e-b777-2678933eb2a4",
+    "78cf94df-fb46-41df-901c-5c3be1bf9b66",
+    "0787e037-20b8-4ab5-831b-719add3a99cc",
+    "d638a4b6-88e2-4340-9dd7-2154c8d63c96",
+    "53e89b32-6c2e-4880-8204-f9b19ef4cbcb",
+    "98ec6880-102d-4317-8e68-8684cf3306e5",
+    "29ce7244-a3bc-4e7d-a53f-c4a84a198470",
+    "07ac8262-fda4-432a-8823-e7a89cb41def",
+    "a9951a60-b878-4ff1-8bcf-0a32d19c5b3d",
+    "d2daa2a4-7fb7-485d-8ee7-ac318fa177eb",
+    "dfe15905-964f-4464-81b8-f6fd817d6e01",
+    "faf5c0a2-ee95-4780-9634-7eca95031ec8",
+    "1688887697b71f9b87"
+  ]
+}

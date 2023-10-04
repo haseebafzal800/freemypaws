@@ -1,0 +1,17 @@
+<div class='related-articles'>
+  
+  <strong class="related-heading">Related Articles</strong>
+  
+  {% for tag in article.tags %}
+    {% assign skip_articles = article.handle | split: '.....' %}
+    {% assign skip_articles = skip_articles | concat: temp %}
+    {% for related_article in blog.articles limit: 3%}
+      {% if related_article.tags contains tag %}
+        {% unless skip_articles contains related_article.handle %}
+          {% assign temp = related_article.handle | split: '.....' %}
+          {% render "article", article: related_article %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>

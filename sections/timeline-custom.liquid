@@ -1,0 +1,112 @@
+{% style %}
+  .sec-timeline .page-width .timeline-wrap .timeline-box:nth-child(even) .timeline-box-wrapper {
+    flex-direction: column;
+  }
+  .sec-timeline .page-width .timeline-wrap .timeline-box p {
+    width: 100%;
+  }
+  .button-div {
+    padding-bottom: 10px;
+    width: 100%;
+  }  
+  .sec-timeline .timeline-box-wrapper {
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 768px) {
+    .sec-timeline .page-width .timeline-wrap .timeline-box:nth-child(odd),
+    .sec-timeline .page-width .timeline-wrap .timeline-box:nth-child(even) {
+      padding: 30px;
+      text-align: left;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .sec-timeline .page-width .timeline-wrap .timeline-box:nth-child(odd),
+    .sec-timeline .page-width .timeline-wrap .timeline-box:nth-child(even) {
+      padding: 20px;
+      text-align: left;
+    }
+  }
+{% endstyle %}
+<div class="sec-timeline section-{{ section.id }}">
+  <div class="container">
+    <div class="timeline-title">
+      <h2 class="large-title text-center row cc-animate-init cc-animate-in">{{ section.settings.title }}</h2>
+    </div>
+    <div class="timeline-wrap">
+      <ul>
+        {% for block in section.blocks %}
+          <li class="timeline-box">   
+            <div class="timeline-box-wrapper">
+              {% if block.settings.timeline_icon %}
+                 <div class="timeline-icon"><img src="{{ block.settings.timeline_icon | img_url:'master' }}"></div>
+              {% endif %}
+              {% if block.settings.button_title %}
+                  <div class="button-div">
+                    <a class="btn">
+                      {% if block.settings.button_title_size == 'H4' %}
+                        <h4>{{ block.settings.button_title }}</h4>
+                      {% endif %}
+                    </a>
+                  </div>
+              {% endif %}
+              <p>{{ block.settings.timeline_text }}</p>
+            </div>
+          </li>  
+        {% endfor %}
+        <div style="clear:both;"></div>
+      </ul>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "timeline-custom",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "EASY PEASY PROCESS"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "timeline",
+        "name": "Timeline",
+        "settings": [
+          {
+            "type": "text",
+            "id": "timeline_text",
+            "label": "Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "timeline_icon",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "button_title",
+            "label": "Button Title"
+          },
+          {
+            "type": "select",
+            "id": "button_title_size",
+            "label": "Button Title Size",
+            "options": [
+              {
+                "label": "H4",
+                "value": "H4"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Timeline Custom"
+      }
+    ]
+  }
+{% endschema %}

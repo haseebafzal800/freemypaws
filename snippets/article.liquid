@@ -1,0 +1,22 @@
+<div class="article-wrapper">
+  <a href="{{ article.url }}" class="article-img">
+    <img src="{{ article.image | img_url: 'large' }}" alt="{{ article.alt }}">
+  </a>
+  <div class="cc-article">
+    <a href="{% if link.url != blank %} {{ link.url }} {%  else %} {{ blog.url }} {% endif %}" class="btn btn-primary">
+      {% if link.title != blank %}
+        {{ link.title }}
+      {% else %}
+        {{ blog.title }}
+      {% endif %}
+    </a>
+    <a href="{{ article.url }}" class="cc-title">
+      <strong class="heading-style">{{ article.title }}</strong>
+    </a>
+    <div class="cc-content">
+      {% if article.excerpt != blank %}
+        {{ article.excerpt }}
+      {% endif %}
+    </div>
+  </div>
+</div>

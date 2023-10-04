@@ -1,0 +1,31 @@
+<div class="psa-inner-banner">
+  <div class="psa-inner-container">
+    <img src="{{ section.settings.image | img_url:'1200x' }}" alt="banner">
+  </div>
+</div>
+
+{% schema %}
+ {
+  "name": "Air-Airline Banner",
+   "class":"airline-custom",
+  "settings": [    
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+  ],
+  "presets": [
+      {
+        "name": "Air-Airline Banner"
+      }
+    ]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,226 @@
+<script type="text/javascript">
+  function modalShow() {
+  document.body.classList.add("lowerindex");
+      document.body.classList.add('overflowhidden')
+        var modal = document.getElementsByClassName("modal-container")[0];
+        modal.style.display = "flex"
+      };
+      function modalClose() {
+        document.body.classList.remove('lowerindex')
+      document.body.classList.remove('overflowhidden')
+        var modal = document.getElementsByClassName("modal-container")[0];
+        modal.style.display = 'none'
+      };
+      window.onclick = function(event) {
+        var modal_container = document.getElementsByClassName("modal-container")[0];
+        if (event.target == modal_container) {
+      document.body.classList.remove('overflowhidden')
+          document.body.classList.remove('lowerindex')
+          modal_container.style.display = "none";
+        }
+      }</script>
+{% assign close_modal = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+ </svg>
+ ' %}
+{% assign img_account_center_address_book = 'https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-account-center-address-book-felicitails-founded-by-lindsay-giguiere.png?v=1685640384' %}
+{% assign alt_account_center_address_book = 'felicitails-account-center-address-book-felicitails-founded-by-lindsay-giguiere' %}
+
+<div class="account-main-body">
+  <div class="account-main-items">
+    <div class="account-main-digitalvault">
+      <div class="account-main-item-title">
+        <h1>ADDRESS BOOK</h1>
+      </div>
+      <div class="account-main-item-image">
+        <img src="{{ img_account_center_address_book }}" alt="{{ alt_account_center_address_book }}">
+      </div>
+    </div>
+    <div class="account-address-body width-fill">
+      <div class="account-cards width-fill">
+        <div class="account-card add">
+          <div class="add-address">
+            <span class="add">+</span>
+            <h4 class="text">Add address</h4>
+          </div>
+        </div>
+        <div class="account-card default">
+          <div class="width-fill height-fill card-content">
+            <div class="card-header">
+              <button>Default</button>
+            </div>
+            <div class="card-body">
+              <div class="header">Lindsay Giguere</div>
+              <div class="body">
+                <p>First Name Last Name</p>
+                <p>Address 1</p>
+                <p>Address 2</p>
+                <p>City, State, Zip</p>
+                <p>Country</p>
+                <p>Contact Number</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p class="width-fill">
+                <a>Edit</a>
+                |
+                <a onclick="modalShow();">Remove</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="account-card">
+          <div class="width-fill height-fill card-content">
+            <div class="card-body">
+              <div class="header">First Name Last Name</div>
+              <div class="body">
+                <p>Address 1</p>
+                <p>Address 2</p>
+                <p>City, State, Zip</p>
+                <p>Country</p>
+                <p>Contact Number</p>
+              </div>
+            </div>
+            <div class="width-fill card-footer">
+              <p class="width-fill">
+                <a>Edit</a>
+                |
+                <a>Remove</a>
+                |
+                <a>Set as Default</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="account-card">
+          <div class="width-fill height-fill card-content">
+            <div class="card-body">
+              <div class="header">First Name Last Name</div>
+              <div class="body">
+                <p>Address 1</p>
+                <p>Address 2</p>
+                <p>City, State, Zip</p>
+                <p>Country</p>
+                <p>Contact Number</p>
+              </div>
+            </div>
+            <div class="width-fill card-footer">
+              <p class="width-fill">
+                <a>Edit</a>
+                |
+                <a>Remove</a>
+                |
+                <a>Set as Default</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="account-card">
+          <div class="width-fill height-fill card-content">
+            <div class="card-body">
+              <div class="header">First Name Last Name</div>
+              <div class="body">
+                <p>Address 1</p>
+                <p>Address 2</p>
+                <p>City, State, Zip</p>
+                <p>Country</p>
+                <p>Contact Number</p>
+              </div>
+            </div>
+            <div class="width-fill card-footer">
+              <p class="width-fill">
+                <a>Edit</a>
+                |
+                <a>Remove</a>
+                |
+                <a>Set as Default</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="account-card">
+          <div class="width-fill height-fill card-content">
+            <div class="card-body">
+              <div class="header">First Name Last Name</div>
+              <div class="body">
+                <p>Address 1</p>
+                <p>Address 2</p>
+                <p>City, State, Zip</p>
+                <p>Country</p>
+                <p>Contact Number</p>
+              </div>
+            </div>
+            <div class="width-fill card-footer">
+              <p class="width-fill">
+                <a>Edit</a>
+                |
+                <a>Remove</a>
+                |
+                <a>Set as Default</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="account-card">
+          <div class="width-fill height-fill card-content">
+            <div class="card-body">
+              <div class="header">First Name Last Name</div>
+              <div class="body">
+                <p>Address 1</p>
+                <p>Address 2</p>
+                <p>City, State, Zip</p>
+                <p>Country</p>
+                <p>Contact Number</p>
+              </div>
+            </div>
+            <div class="width-fill card-footer">
+              <p class="width-fill">
+                <a>Edit</a>
+                |
+                <a>Remove</a>
+                |
+                <a>Set as Default</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-container" style="display:none">
+  <div class="modal">
+    <div class="modal-header">
+      <h4>CONFIRM REMOVAL</h4>
+      <div onclick="modalClose();">
+
+        {{ close_modal }}
+      </div>
+    </div>
+    <div class="line-w"></div>
+    <div class="modal-body">
+      <div>
+
+        <p class="font-bold">First Name Last Name</p>
+        <p>Address 1</p>
+        <p>Address 2</p>
+        <p>City, State, Zip</p>
+        <p>Country</p>
+        <p>Contact Number</p>
+      </div>
+      <div class="line-w"></div>
+      <div>
+        <p class="font-bold">Please note:</p>
+        <p>Removing this address will not affect any pending orders being shipped to this address, To ensure uninterrupted fulfillment of future orders, please update any wishlists, subscribe and save settings and periodical subscriptions using this address.</p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="modal-buttons">
+        <button class="no">No</button>
+        <button class="yes">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>

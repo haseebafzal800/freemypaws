@@ -1,0 +1,30 @@
+<style>
+  .custom-wrapper .fancybox-caption:after {
+    background: url('https://cdn.shopify.com/s/files/1/0068/5454/1410/files/lindsay-giguiere-signature-felicitails-a-modern-day-pet-animal-destination-founded-by-lindsay-giguiere.png?v=1685566813') no-repeat;
+  }
+
+  .custom-wrapper .fancybox-caption__body:before {
+    background: url('https://cdn.shopify.com/s/files/1/0068/5454/1410/files/felicitails-blog-mood-board-created-by-lindsay-giguiere-quotation-mark-icon.png?v=1689082879') no-repeat;
+  }
+</style>
+
+
+{% assign gallery_all = blog.metafields.custom.blog_gallery.value %}
+
+<div class="iq-gallery-sec">
+  {% if gallery_all.heading %}
+    <h1 class="heading-style">{{ gallery_all.heading }}</h1>
+  {% endif %}
+
+  <div class="gallery-holder">
+    {% for single_gal in gallery_all.gallery.value %}
+      <a
+        href="{{ single_gal.image | img_url: '1024x' }}"
+        class="box box{{ forloop.index }}"
+        data-fancybox="gallery"
+        data-caption="{{ single_gal.image_caption }}">
+        <img src="{{ single_gal.image | img_url: '1024x' }}">
+      </a>
+    {% endfor %}
+  </div>
+</div>
